@@ -92,10 +92,11 @@ body {
           margin-top: 18px; } }
   #nav .nav-menu {
     font-family: BebasNeue;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 24px;
     color: #24292e;
-    margin-left: 24px; }
+    margin-left: 10px; }
     #nav .nav-menu:first-child {
       margin-left: 0; }
     #nav .nav-menu.z-active {
