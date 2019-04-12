@@ -164,7 +164,8 @@ body {
   .pagination > .page-number {
     margin: 0 10px; }
     .pagination > .page-number.current {
-      text-decoration: underline; }
+      color: #5d78ff;
+      font-weight: 500; }
 
 .project-card {
   display: flex;
