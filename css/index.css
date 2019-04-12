@@ -15,7 +15,7 @@ a {
   color: #24292e;
   text-decoration: none; }
   a:hover {
-    color: #f0534e; }
+    color: #5d78ff; }
 
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
@@ -142,7 +142,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   opacity: 0.8;
-  color: #333; }
+  color: #24292e; }
   #footer .copyright {
     float: right; }
   #footer .email {
@@ -173,8 +173,7 @@ body {
   padding: 80px 100px;
   margin: 40px 0;
   background-color: white;
-  color: #333;
-  border-radius: 0px; }
+  color: #24292e; }
   .project-card > .imgWrap {
     width: 320px;
     height: 240px;
@@ -193,7 +192,7 @@ body {
       line-height: 40px; }
       .project-card > .ctnWrap > .title:hover {
         opacity: 1;
-        color: #f0534e; }
+        color: #5d78ff; }
     .project-card > .ctnWrap > .desc {
       font-size: 16px;
       line-height: 30px;
@@ -243,7 +242,7 @@ body {
   margin: 64px 0 80px;
   padding: 80px 100px 0;
   background-color: white;
-  color: #333;
+  color: #24292e;
   font-size: 16px;
   line-height: 30px; }
   .article > .title {
@@ -269,7 +268,7 @@ body {
       overflow: auto;
       padding: 0;
       margin-bottom: 15px;
-      color: #333;
+      color: #5b5d67;
       background: #f8f8f8; }
       .article > .content pre .gutter, .article > .content .highlight .gutter {
         text-align: right; }
@@ -295,7 +294,7 @@ body {
           border-radius: 100%;
           background-color: #444; }
     .article > .content a {
-      color: #f0534e; }
+      color: #5d78ff; }
     .article > .content strong {
       font-weight: 600; }
     .article > .content figure > img {
@@ -350,7 +349,7 @@ body {
     line-height: 24px; }
     .archive-category > .menu > li > a:hover {
       opacity: 1;
-      color: #f0534e; }
+      color: #5d78ff; }
     .archive-category > .menu > li > span {
       opacity: .45;
       font-size: 14px;
