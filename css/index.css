@@ -22,11 +22,11 @@ body {
 
 @font-face {
   font-family: 'BebasNeue';
-  src: url("./fonts/BebasNeue.otf"); }
+  src: url("../fonts/BebasNeue.otf"); }
 
 @font-face {
   font-family: 'BEYNO';
-  src: url("./fonts/BEYNO.ttf"); }
+  src: url("../fonts/BEYNO.ttf"); }
 
 @font-face {
   font-family: 'iconfont';
@@ -93,7 +93,7 @@ body {
   #nav .nav-menu {
     font-family: BebasNeue;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     color: #24292e;
     margin-left: 10px; }
