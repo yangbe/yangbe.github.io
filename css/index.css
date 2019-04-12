@@ -146,11 +146,13 @@ body {
   color: #333; }
   #footer .copyright {
     float: right; }
+  #footer .email {
+    float: right; }
   @media screen and (max-width: 800px) {
     #footer {
       margin-top: 20px;
       text-align: center; }
-      #footer .copyright {
+      #footer .email {
         display: block;
         float: none; } }
 
