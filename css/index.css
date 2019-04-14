@@ -147,7 +147,7 @@ body {
     float: right; }
   #footer .email {
     float: right; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     #footer {
       margin-top: 20px;
       text-align: center; }
@@ -370,7 +370,11 @@ body {
 
 .tagcloud {
   background-color: white;
-  padding: 60px 0 60px 0; }
+  padding: 30px 0 60px 0; }
   .tagcloud > a {
     display: inline-block;
-    padding: 10px; }
+    padding: 10px;
+    background-color: #F4f5f6; }
+  @media screen and (max-width: 600px) {
+    .tagcloud {
+      padding: 60px 40px 60px 40px; } }
