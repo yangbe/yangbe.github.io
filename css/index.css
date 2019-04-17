@@ -15,7 +15,7 @@ a {
   color: #24292e;
   text-decoration: none; }
   a:hover {
-    color: #5d78ff; }
+    color: #03A87C; }
 
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
@@ -164,7 +164,7 @@ body {
   .pagination > .page-number {
     margin: 0 10px; }
     .pagination > .page-number.current {
-      color: #5d78ff;
+      color: #03A87C;
       font-weight: 500; }
 
 .project-card {
@@ -174,10 +174,10 @@ body {
   padding: 40px 0px 80px 0;
   margin: 40px 0;
   background-color: white;
-  border-bottom: 1px solid #f1f2f3;
+  border-bottom: 1px solid #e4e5e6;
   color: #24292e; }
   .project-card > .imgWrap {
-    width: 320px;
+    width: 300px;
     height: 240px;
     margin-right: 40px;
     background-color: #f8f8f8; }
@@ -194,7 +194,7 @@ body {
       line-height: 40px; }
       .project-card > .ctnWrap > .title:hover {
         opacity: 1;
-        color: #5d78ff; }
+        color: #03A87C; }
     .project-card > .ctnWrap > .desc {
       font-size: 16px;
       line-height: 30px;
@@ -266,18 +266,31 @@ body {
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 15px; }
-    .article > .content pre, .article > .content .highlight {
+    .article > .content pre {
+      overflow: auto;
+      padding: 0;
+      margin-bottom: 0px;
+      color: #5b5d67;
+      background: #f8f8f8; }
+      .article > .content pre .gutter {
+        text-align: right; }
+        .article > .content pre .gutter pre {
+          background-color: #f0f0f0;
+          padding: 0 10px; }
+      .article > .content pre .code {
+        padding: 0 10px; }
+    .article > .content .highlight {
       overflow: auto;
       padding: 0;
       margin-bottom: 15px;
       color: #5b5d67;
       background: #f8f8f8; }
-      .article > .content pre .gutter, .article > .content .highlight .gutter {
+      .article > .content .highlight .gutter {
         text-align: right; }
-        .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
+        .article > .content .highlight .gutter pre {
           background-color: #f0f0f0;
           padding: 0 10px; }
-      .article > .content pre .code, .article > .content .highlight .code {
+      .article > .content .highlight .code {
         padding: 0 10px; }
     .article > .content ul, .article > .content ol {
       margin: 15px 0;
@@ -296,7 +309,7 @@ body {
           border-radius: 100%;
           background-color: #444; }
     .article > .content a {
-      color: #5d78ff; }
+      color: #03A87C; }
     .article > .content strong {
       font-weight: 600; }
     .article > .content figure > img {
@@ -351,7 +364,7 @@ body {
     line-height: 24px; }
     .archive-category > .menu > li > a:hover {
       opacity: 1;
-      color: #5d78ff; }
+      color: #03A87C; }
     .archive-category > .menu > li > span {
       opacity: .45;
       font-size: 14px;
