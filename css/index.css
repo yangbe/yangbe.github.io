@@ -1,7 +1,7 @@
 @import url(reset.css);
 #container {
   max-width: 860px;
-  margin: 40px auto 75px;
+  margin: 20px auto 75px;
   padding: 0 15px; }
   @media screen and (max-width: 600px) {
     #container {
@@ -68,7 +68,7 @@ body {
   clear: both; }
 
 #nav {
-  margin-bottom: 64px; }
+  margin-bottom: 40px; }
   #nav > .header {
     margin-bottom: 10px; }
     #nav > .header > .title {
@@ -94,12 +94,16 @@ body {
     font-family: BebasNeue;
     font-size: 20px;
     line-height: 24px;
-    color: #24292e;
+    color: #647382;
     margin-left: 10px; }
+    #nav .nav-menu:hover {
+      opacity: 1;
+      color: #03A87C; }
     #nav .nav-menu:first-child {
       margin-left: 0; }
     #nav .nav-menu.z-active {
-      position: relative; }
+      position: relative;
+      color: #46515C; }
       #nav .nav-menu.z-active::after {
         content: '';
         position: absolute;
@@ -107,16 +111,19 @@ body {
         right: 0;
         bottom: -4px;
         height: 2px;
-        background-color: #24292e; }
+        background-color: #46515C; }
     @media screen and (max-width: 600px) {
       #nav .nav-menu {
         margin-left: 10px;
         font-size: 20px; } }
   #nav .nav-icn {
+    color: #46515C;
     margin-right: 15px;
     line-height: 24px;
     font-size: 24px;
-    font-style: normal; }
+    font-style: normal;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 50%; }
     #nav .nav-icn:last-child {
       margin-right: 0; }
   #nav .nav-icn.iconfont.icon-dribbble:hover {

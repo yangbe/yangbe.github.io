@@ -1,6 +1,6 @@
 #container {
   max-width: 860px;
-  margin: 40px auto 75px;
+  margin: 20px auto 75px;
   padding: 0 15px; }
   @media screen and (max-width: 600px) {
     #container {
