@@ -249,56 +249,73 @@ body {
 
 .article {
   margin: 64px 0 80px;
-  padding: 80px 0px 0;
+  padding: 0px 0px 0;
   background-color: white;
   color: #24292e;
   font-size: 16px;
   line-height: 30px; }
   .article > .title {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 48px;
     margin-bottom: 10px;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .article > .title {
+        text-align: left; } }
   .article > .sub {
     opacity: .5;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .article > .sub {
+        text-align: left; } }
   .article > .content {
     padding-bottom: 64px; }
-    .article > .content h1, .article > .content h2, .article > .content h3, .article > .content h4, .article > .content h5 {
+    .article > .content h1 {
       font-size: 24px;
       font-weight: 600;
       line-height: 40px;
+      margin-bottom: 15px; }
+    .article > .content h2 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 36px;
+      margin-bottom: 15px; }
+    .article > .content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 15px; }
+    .article > .content h4 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 15px; }
+    .article > .content h5 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
       margin-bottom: 15px; }
     .article > .content p {
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 15px; }
-    .article > .content pre {
-      overflow: auto;
-      padding: 0;
-      margin-bottom: 0px;
-      color: #5b5d67;
-      background: #f8f8f8; }
-      .article > .content pre .gutter {
-        text-align: right; }
-        .article > .content pre .gutter pre {
-          background-color: #f0f0f0;
-          padding: 0 10px; }
-      .article > .content pre .code {
-        padding: 0 10px; }
-    .article > .content .highlight {
+    .article > .content pre, .article > .content .highlight {
       overflow: auto;
       padding: 0;
       margin-bottom: 15px;
       color: #5b5d67;
       background: #f8f8f8; }
-      .article > .content .highlight .gutter {
+      .article > .content pre .gutter, .article > .content .highlight .gutter {
         text-align: right; }
-        .article > .content .highlight .gutter pre {
+        .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
           background-color: #f0f0f0;
           padding: 0 10px; }
-      .article > .content .highlight .code {
+      .article > .content pre .code, .article > .content .highlight .code {
         padding: 0 10px; }
+    .article > .content pre {
+      margin-bottom: 0px; }
     .article > .content ul, .article > .content ol {
       margin: 15px 0;
       margin-left: 15px; }
@@ -325,7 +342,7 @@ body {
       font-size: 14px; }
     .article > .content blockquote {
       border-left: 4px solid #ddd;
-      color: #7a7a7a;
+      color: #8D97A1;
       border-left: 5px solid #ccc;
       padding-left: 15px;
       font-size: 16px;
