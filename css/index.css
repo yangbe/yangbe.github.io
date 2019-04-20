@@ -83,6 +83,9 @@ body {
       font-family: BEYNO; }
       #nav > .header > .title:hover {
         opacity: .7; }
+      @media screen and (max-width: 600px) {
+        #nav > .header > .title {
+          font-size: 42px; } }
   #nav > .header > .menu {
     text-align: right;
     padding: 10px 0 0 0; }
@@ -143,7 +146,9 @@ body {
       margin-right: 0; }
     @media screen and (max-width: 600px) {
       #footer .nav-icn {
-        float: none; } }
+        float: none;
+        font-size: 32px;
+        font-style: normal; } }
   #footer .nav-icn.iconfont.icon-dribbble:hover {
     color: #EA4c89; }
   #footer .nav-icn.iconfont.icon-behance:hover {
@@ -159,11 +164,13 @@ body {
     float: right; }
   @media screen and (max-width: 600px) {
     #footer {
-      margin-top: 20px;
+      margin-top: 40px;
       text-align: center; }
       #footer .email {
         display: block;
-        float: none; } }
+        float: none;
+        font-size: 16px;
+        margin-top: 10px; } }
 
 .pagination {
   padding: 20px;
