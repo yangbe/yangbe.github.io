@@ -1,7 +1,7 @@
 @import url(reset.css);
 #container {
   max-width: 860px;
-  margin: 20px auto 75px;
+  margin: 0 auto 75px;
   padding: 0 15px; }
   @media screen and (max-width: 600px) {
     #container {
@@ -68,31 +68,34 @@ body {
   clear: both; }
 
 #nav {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding: 20px 0 0 0;
+  background-color: #ffffff; }
   #nav > .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 10px; }
     #nav > .header > .title {
-      font-size: 45px;
-      line-height: 53px;
+      font-size: 32px;
+      line-height: 48px;
       color: #24292e;
       font-family: BEYNO; }
       #nav > .header > .title:hover {
         opacity: .7; }
-  #nav > .ctnWrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    #nav > .ctnWrap > .menu {
-      text-align: right; }
-    @media screen and (max-width: 600px) {
-      #nav > .ctnWrap {
-        flex-direction: column; }
-        #nav > .ctnWrap > .menu {
-          text-align: center;
-          margin-top: 18px; } }
+  #nav > .header > .menu {
+    text-align: right;
+    padding: 10px 0 0 0; }
+  @media screen and (max-width: 600px) {
+    #nav > .header {
+      flex-direction: column; }
+      #nav > .header > .menu {
+        text-align: center;
+        margin-top: 18px;
+        padding: 0; } }
   #nav .nav-menu {
     font-family: BebasNeue;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #647382;
     margin-left: 10px; }
@@ -115,34 +118,11 @@ body {
     @media screen and (max-width: 600px) {
       #nav .nav-menu {
         margin-left: 10px;
-        font-size: 20px; } }
-  #nav .nav-icn {
-    color: #46515C;
-    margin-right: 15px;
-    line-height: 24px;
-    font-size: 24px;
-    font-style: normal;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
-    border-radius: 50%; }
-    #nav .nav-icn:last-child {
-      margin-right: 0; }
-  #nav .nav-icn.iconfont.icon-dribbble:hover {
-    color: #EA4c89; }
-  #nav .nav-icn.iconfont.icon-behance:hover {
-    color: #0057ff; }
-  #nav .nav-icn.iconfont.icon-twitter:hover {
-    color: #1da1f2; }
-  #nav .nav-icn.iconfont.icon-googleplus:hover {
-    color: #DD4B39; }
-  #nav .nav-icn.iconfont.icon-github:hover {
-    color: #24292e;
-    opacity: .7; }
+        font-size: 18px; } }
   @media screen and (max-width: 600px) {
     #nav {
       text-align: center;
-      margin-bottom: 24px; }
-      #nav > .ctnWrap {
-        justify-content: space-around; } }
+      margin-bottom: 24px; } }
 
 #footer {
   margin-top: 80px;
@@ -150,8 +130,31 @@ body {
   line-height: 22px;
   opacity: 0.8;
   color: #24292e; }
-  #footer .copyright {
-    float: right; }
+  #footer .nav-icn {
+    float: left;
+    color: #46515C;
+    margin-right: 15px;
+    line-height: 24px;
+    font-size: 24px;
+    font-style: normal;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 50%; }
+    #footer .nav-icn:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      #footer .nav-icn {
+        float: none; } }
+  #footer .nav-icn.iconfont.icon-dribbble:hover {
+    color: #EA4c89; }
+  #footer .nav-icn.iconfont.icon-behance:hover {
+    color: #0057ff; }
+  #footer .nav-icn.iconfont.icon-twitter:hover {
+    color: #1da1f2; }
+  #footer .nav-icn.iconfont.icon-googleplus:hover {
+    color: #DD4B39; }
+  #footer .nav-icn.iconfont.icon-github:hover {
+    color: #24292e;
+    opacity: .7; }
   #footer .email {
     float: right; }
   @media screen and (max-width: 600px) {
