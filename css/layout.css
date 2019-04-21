@@ -1,11 +1,12 @@
 #container {
-  max-width: 860px;
+  max-width: 768px;
   margin: 0 auto 75px;
-  padding: 0 15px; }
+  padding: 0 40px; }
   @media screen and (max-width: 600px) {
     #container {
       margin-top: 20px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      padding: 0 20px; } }
 
 #panel {
   background-color: white; }

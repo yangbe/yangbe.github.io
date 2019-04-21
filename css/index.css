@@ -1,12 +1,13 @@
 @import url(reset.css);
 #container {
-  max-width: 860px;
+  max-width: 768px;
   margin: 0 auto 75px;
-  padding: 0 15px; }
+  padding: 0 40px; }
   @media screen and (max-width: 600px) {
     #container {
       margin-top: 20px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      padding: 0 20px; } }
 
 #panel {
   background-color: white; }
@@ -15,7 +16,7 @@ a {
   color: #24292e;
   text-decoration: none; }
   a:hover {
-    color: #03A87C; }
+    color: #5694f1; }
 
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
@@ -68,7 +69,7 @@ body {
   clear: both; }
 
 #nav {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 20px 0 0 0;
   background-color: #ffffff; }
   #nav > .header {
@@ -98,13 +99,13 @@ body {
         padding: 0; } }
   #nav .nav-menu {
     font-family: BebasNeue;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #647382;
     margin-left: 10px; }
     #nav .nav-menu:hover {
       opacity: 1;
-      color: #03A87C; }
+      color: #5694f1; }
     #nav .nav-menu:first-child {
       margin-left: 0; }
     #nav .nav-menu.z-active {
@@ -117,7 +118,7 @@ body {
         right: 0;
         bottom: -4px;
         height: 2px;
-        background-color: #46515C; }
+        background-color: #5694f1; }
     @media screen and (max-width: 600px) {
       #nav .nav-menu {
         margin-left: 10px;
@@ -135,7 +136,7 @@ body {
   color: #24292e; }
   #footer .nav-icn {
     float: left;
-    color: #46515C;
+    color: #ABB3BA;
     margin-right: 15px;
     line-height: 24px;
     font-size: 24px;
@@ -194,8 +195,8 @@ body {
   border-bottom: 1px solid #e9ecf0;
   color: #24292e; }
   .project-card > .imgWrap {
-    width: 320px;
-    height: 240px;
+    width: 280px;
+    height: 210px;
     margin-right: 60px;
     background-color: #f8f8f8; }
     .project-card > .imgWrap > img {
@@ -211,7 +212,7 @@ body {
       line-height: 40px; }
       .project-card > .ctnWrap > .title:hover {
         opacity: 1;
-        color: #03A87C; }
+        color: #5694f1; }
     .project-card > .ctnWrap > .desc {
       font-size: 16px;
       line-height: 30px;
@@ -343,7 +344,7 @@ body {
           border-radius: 100%;
           background-color: #444; }
     .article > .content a {
-      color: #03A87C; }
+      color: #5694f1; }
     .article > .content strong {
       font-weight: 600; }
     .article > .content figure > img {
@@ -398,7 +399,7 @@ body {
     line-height: 24px; }
     .archive-category > .menu > li > a:hover {
       opacity: 1;
-      color: #03A87C; }
+      color: #5694f1; }
     .archive-category > .menu > li > span {
       opacity: .45;
       font-size: 14px;
