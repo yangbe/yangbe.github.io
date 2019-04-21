@@ -328,6 +328,12 @@ body {
         padding: 0 10px; }
     .article > .content pre {
       margin-bottom: 0px; }
+    .article > .content img {
+      width: 100%;
+      padding: 0px; }
+      @media screen and (max-width: 600px) {
+        .article > .content img {
+          padding: 0; } }
     .article > .content ul, .article > .content ol {
       margin: 15px 0;
       margin-left: 15px; }
