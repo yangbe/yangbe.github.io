@@ -250,13 +250,14 @@ body {
   @media screen and (max-width: 600px) {
     .project-card {
       flex-direction: column;
-      padding: 20px;
+      padding: 10px;
       margin: 10px 0; }
       .project-card > .imgWrap {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 20px;
-        width: 100%; } }
+        width: 100%;
+        height: 240px; } }
 
 .article {
   margin: 64px 0 80px;
