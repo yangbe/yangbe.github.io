@@ -330,7 +330,7 @@ body {
       margin-bottom: 0px; }
     .article > .content img {
       width: 100%;
-      padding: 10px; }
+      padding: 0px; }
     .article > .content ul, .article > .content ol {
       margin: 15px 0;
       margin-left: 15px; }
