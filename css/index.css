@@ -198,10 +198,13 @@ body {
     width: 280px;
     height: 210px;
     margin-right: 60px;
-    background-color: #f8f8f8; }
+    background-color: #f8f8f8;
+    cursor: pointer; }
     .project-card > .imgWrap > img {
       width: 100%;
       height: 100%; }
+      .project-card > .imgWrap > img:hover {
+        opacity: 0.85; }
   .project-card > .ctnWrap {
     flex: 1;
     word-wrap: break-word;
