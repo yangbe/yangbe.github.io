@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(reset.css);
 #container {
   max-width: 768px;
@@ -150,14 +151,20 @@ body {
         float: none;
         font-size: 32px;
         font-style: normal; } }
-  #footer .nav-icn.iconfont.icon-dribbble:hover {
+  #footer .nav-icn.iconfont.icon-dribbble {
     color: #EA4c89; }
-  #footer .nav-icn.iconfont.icon-behance:hover {
+    #footer .nav-icn.iconfont.icon-dribbble:hover {
+      color: #EA4c89; }
+  #footer .nav-icn.iconfont.icon-behance {
     color: #0057ff; }
+    #footer .nav-icn.iconfont.icon-behance:hover {
+      color: #0057ff; }
   #footer .nav-icn.iconfont.icon-twitter:hover {
     color: #1da1f2; }
-  #footer .nav-icn.iconfont.icon-googleplus:hover {
+  #footer .nav-icn.iconfont.icon-googleplus {
     color: #DD4B39; }
+    #footer .nav-icn.iconfont.icon-googleplus:hover {
+      color: #DD4B39; }
   #footer .nav-icn.iconfont.icon-github:hover {
     color: #24292e;
     opacity: .7; }
@@ -263,7 +270,7 @@ body {
         height: 240px; } }
 
 .article {
-  margin: 64px 0 80px;
+  margin: 60px 0 80px;
   padding: 0px 0px 0;
   background-color: white;
   color: #24292e;
@@ -288,52 +295,39 @@ body {
   .article > .content {
     padding-bottom: 64px; }
     .article > .content h1 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 48px;
+      margin-bottom: 15px;
+      margin-top: 40px; }
+    .article > .content h2 {
       font-size: 24px;
       font-weight: 600;
       line-height: 40px;
-      margin-bottom: 15px; }
-    .article > .content h2 {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 36px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      margin-top: 40px; }
     .article > .content h3 {
       font-size: 18px;
       font-weight: 600;
       line-height: 32px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      margin-top: 20px; }
     .article > .content h4 {
       font-size: 16px;
       font-weight: 600;
       line-height: 28px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      margin-top: 20px; }
     .article > .content h5 {
       font-size: 14px;
       font-weight: 600;
       line-height: 24px;
-      margin-bottom: 15px; }
-    .article > .content p {
-      font-size: 16px;
-      line-height: 30px;
-      margin-bottom: 15px; }
-    .article > .content pre, .article > .content .highlight {
-      overflow: auto;
-      padding: 0;
       margin-bottom: 15px;
-      color: #5b5d67;
-      background: #f8f8f8; }
-      .article > .content pre .gutter, .article > .content .highlight .gutter {
-        text-align: right; }
-        .article > .content pre .gutter pre, .article > .content .highlight .gutter pre {
-          background-color: #f0f0f0;
-          padding: 0 10px; }
-      .article > .content pre .code, .article > .content .highlight .code {
-        padding: 0 10px; }
-    .article > .content pre {
-      margin-bottom: 0px; }
+      margin-top: 20px; }
     .article > .content img {
       width: 100%;
-      padding: 0px; }
+      padding: 0px;
+      margin: 14px 0; }
     .article > .content ul, .article > .content ol {
       margin: 15px 0;
       margin-left: 15px; }
@@ -382,6 +376,37 @@ body {
       margin: 20px 0; }
       .article > footer {
         padding: 10px 0; } }
+
+table {
+  width: 100%;
+  max-width: 768px;
+  margin: 18px 0 18px 0;
+  word-wrap: break-word;
+  word-break: break-all; }
+  table th {
+    padding: 10px 20px;
+    border: 1px solid #e4e7eb;
+    background-color: #f8f8f8; }
+  table tr, table td {
+    border: 1px solid #e4e7eb;
+    padding: 10px 20px;
+    /*竖直居中*/
+    vertical-align: middle; }
+    table tr:hover, table td:hover {
+      background-color: #F9Fafc; }
+
+table td:nth-child(1) {
+  /*首列不换行*/
+  white-space: nowrap; }
+
+.backup {
+  float: left;
+  font-size: 20px;
+  color: #8c8f96; }
+  @media screen and (max-width: 600px) {
+    .backup {
+      float: none;
+      padding: 0px 0px 0px 16px; } }
 
 .archive {
   padding: 80px 0px;
@@ -445,17 +470,22 @@ body {
     @media screen and (max-width: 600px) {
       .about .bio {
         margin-bottom: 30px; } }
-  .about table {
+  .about .mytable {
     width: 100%; }
-  .about th, .about td {
-    text-align: left;
-    border-bottom: 1px solid #f2f4f7;
-    padding: 7px 14px;
-    color: #46515C;
-    line-height: 60px; }
-  .about th {
-    font-weight: 600;
-    width: 46%; }
+    .about .mytable th, .about .mytable tr, .about .mytable td {
+      border-top: none;
+      border-right: none;
+      border-left: none; }
+    .about .mytable th, .about .mytable td {
+      text-align: left;
+      border-bottom: 1px solid #f2f4f7;
+      padding: 7px 14px;
+      color: #46515C;
+      line-height: 60px;
+      background-color: #ffffff; }
+    .about .mytable th {
+      font-weight: 600;
+      width: 46%; }
 
 .tagcloud {
   background-color: white;
