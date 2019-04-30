@@ -71,6 +71,8 @@ body {
 
 #nav {
   z-index: 99999;
+  position: sticky;
+  top: 0px;
   margin-bottom: 20px;
   padding: 20px 0 0 0;
   background-color: #ffffff; }
