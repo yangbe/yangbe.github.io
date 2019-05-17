@@ -70,7 +70,7 @@ body {
   clear: both; }
 
 #nav {
-  z-index: 99999;
+  z-index: 100;
   margin-bottom: 20px;
   padding: 20px 0 0 0;
   background-color: #ffffff; }
@@ -140,7 +140,7 @@ body {
   color: #24292e; }
   #footer .nav-icn {
     float: left;
-    color: #ABB3BA;
+    color: #35495D;
     margin-right: 15px;
     line-height: 24px;
     font-size: 24px;
@@ -154,23 +154,16 @@ body {
         float: none;
         font-size: 32px;
         font-style: normal; } }
-  #footer .nav-icn.iconfont.icon-dribbble {
+  #footer .nav-icn.iconfont.icon-dribbble:hover {
     color: #EA4c89; }
-    #footer .nav-icn.iconfont.icon-dribbble:hover {
-      color: #EA4c89; }
-  #footer .nav-icn.iconfont.icon-behance {
+  #footer .nav-icn.iconfont.icon-behance:hover {
     color: #0057ff; }
-    #footer .nav-icn.iconfont.icon-behance:hover {
-      color: #0057ff; }
   #footer .nav-icn.iconfont.icon-twitter:hover {
     color: #1da1f2; }
-  #footer .nav-icn.iconfont.icon-googleplus {
+  #footer .nav-icn.iconfont.icon-googleplus:hover {
     color: #DD4B39; }
-    #footer .nav-icn.iconfont.icon-googleplus:hover {
-      color: #DD4B39; }
   #footer .nav-icn.iconfont.icon-github:hover {
-    color: #24292e;
-    opacity: .7; }
+    color: #24292e; }
   #footer .email {
     float: right; }
   @media screen and (max-width: 600px) {
@@ -208,7 +201,6 @@ body {
     width: 280px;
     height: 210px;
     margin-right: 60px;
-    background-color: #f8f8f8;
     cursor: pointer; }
     .project-card > .imgWrap > img {
       width: 100%;
@@ -230,7 +222,8 @@ body {
       font-size: 16px;
       line-height: 30px;
       margin-top: 20px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      color: #4c6073; }
     .project-card > .ctnWrap > .sub {
       font-size: 16px;
       line-height: 30px;
