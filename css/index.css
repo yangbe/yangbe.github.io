@@ -23,14 +23,6 @@ body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
 
 @font-face {
-  font-family: 'BebasNeue';
-  src: url("../fonts/BebasNeue.otf"); }
-
-@font-face {
-  font-family: 'BEYNO';
-  src: url("../fonts/BEYNO.ttf"); }
-
-@font-face {
   font-family: 'iconfont';
   /* project id 1136188 */
   src: url("//at.alicdn.com/t/font_1136188_ckrn9xy1f8.eot");
@@ -80,10 +72,14 @@ body {
     justify-content: space-between;
     margin-bottom: 10px; }
     #nav > .header > .title {
-      font-size: 32px;
+      font-size: 24px;
       line-height: 48px;
-      color: #24292e;
-      font-family: BEYNO; }
+      color: #647382; }
+      #nav > .header > .title img {
+        width: 24px;
+        padding-top: 8px; }
+        #nav > .header > .title img:hover {
+          opacity: .7; }
       #nav > .header > .title:hover {
         opacity: .7; }
       @media screen and (max-width: 600px) {
@@ -101,11 +97,10 @@ body {
         margin-top: 18px;
         padding: 0; } }
   #nav .nav-menu {
-    font-family: BebasNeue;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: #647382;
-    margin-left: 10px; }
+    margin-left: 20px; }
     #nav .nav-menu:hover {
       opacity: 1;
       color: #5694f1; }
