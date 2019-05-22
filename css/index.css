@@ -514,7 +514,11 @@ table td:nth-child(1) {
     padding: 10px;
     margin-bottom: 20px; }
     .pflo li:hover {
-      background-color: #f2f2f2; }
+      animation: tapAnimation 0.4s cubic-bezier(0.31, 1, 0.34, 1) forwards; }
+
+@keyframes tapAnimation {
+  100% {
+    background-color: #f2f2f2; } }
     @media screen and (max-width: 600px) {
       .pflo li {
         width: 100%; } }
