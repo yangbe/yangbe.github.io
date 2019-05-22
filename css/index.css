@@ -152,7 +152,7 @@ body {
     @media screen and (max-width: 600px) {
       #footer .nav-icn {
         float: none;
-        font-size: 32px;
+        font-size: 28px;
         font-style: normal; } }
   #footer .nav-icn.iconfont.icon-dribbble:hover {
     color: #EA4c89; }
@@ -172,6 +172,7 @@ body {
       margin-top: 40px;
       text-align: center; }
       #footer .email {
+        font-weight: 500;
         display: block;
         float: none;
         font-size: 16px;
@@ -294,19 +295,20 @@ body {
     .article > .content h1 {
       font-size: 30px;
       font-weight: 600;
-      line-height: 48px;
+      line-height: 72px;
       margin-bottom: 15px;
-      margin-top: 40px; }
+      margin-top: 40px;
+      border-bottom: 1px solid #e4e7eb; }
     .article > .content h2 {
       font-size: 24px;
       font-weight: 600;
-      line-height: 40px;
+      line-height: 44px;
       margin-bottom: 15px;
       margin-top: 40px; }
     .article > .content h3 {
       font-size: 18px;
       font-weight: 600;
-      line-height: 32px;
+      line-height: 36px;
       margin-bottom: 15px;
       margin-top: 20px; }
     .article > .content h4 {
@@ -488,7 +490,60 @@ table td:nth-child(1) {
       background-color: #ffffff; }
     .about .mytable th {
       font-weight: 600;
-      width: 46%; }
+      width: 42%; }
+      @media screen and (max-width: 600px) {
+        .about .mytable th {
+          width: 30%; } }
+    .about .mytable span {
+      line-height: 28px; }
+
+.pflo {
+  margin-top: 40px; }
+  .pflo ul {
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex-wrap: wrap; }
+  .pflo li {
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    width: 33.33333%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px; }
+    .pflo li:hover {
+      background-color: #f2f2f2; }
+    @media screen and (max-width: 600px) {
+      .pflo li {
+        width: 100%; } }
+  .pflo img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    overflow: hidden;
+    z-index: 0; }
+    .pflo img:hover {
+      opacity: 0.8; }
+  .pflo .info {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 8px 4px;
+    color: #333;
+    text-align: left; }
+    .pflo .info h3 {
+      margin: 4px 0;
+      font-size: 14px;
+      font-weight: 600; }
+      @media screen and (max-width: 600px) {
+        .pflo .info h3 {
+          font-size: 16px; } }
+    .pflo .info p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #647382; }
 
 .tagcloud {
   background-color: white;
