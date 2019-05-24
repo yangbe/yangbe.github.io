@@ -7,19 +7,19 @@
   
   <title>Add-Customer 表单优化 | Liu.jianyang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只能填">
+  <meta name="description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单左右区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只">
 <meta name="keywords" content="design">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Add-Customer 表单优化">
 <meta property="og:url" content="https://yangbe.github.io/posts/bb3a1757/index.html">
 <meta property="og:site_name" content="Liu.jianyang">
-<meta property="og:description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只能填">
+<meta property="og:description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单左右区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57938579-1078fe00-78fb-11e9-85ea-f80757719961.png">
-<meta property="og:updated_time" content="2019-05-18T08:55:53.351Z">
+<meta property="og:updated_time" content="2019-05-24T00:40:00.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Add-Customer 表单优化">
-<meta name="twitter:description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只能填">
+<meta name="twitter:description" content="在测试填写这个表单时，发现有下面几个问题：  联系方式填写不合理 相同特征的信息没有放在一起 信息的阅读性混乱，文案长短相差有点大 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解 表单左右区域的空间利用的太拥挤   1. 联系方式的定义优化  字段定义: Mobile Number ：只能填写手机号码；Secondary Number ：填写其它联系号码，包括手机和固话   限制死了只">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/9880101/57938579-1078fe00-78fb-11e9-85ea-f80757719961.png">
   
     <link rel="icon" href="/images/favicon.ico">
@@ -73,9 +73,9 @@
 <li>相同特征的信息没有放在一起</li>
 <li>信息的阅读性混乱，文案长短相差有点大</li>
 <li>校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解</li>
-<li>表单区域的空间利用的太拥挤</li>
+<li>表单左右区域的空间利用的太拥挤</li>
 </ol>
-<p><img src="https://user-images.githubusercontent.com/9880101/57966935-2fbf6c00-798b-11e9-9be3-b9f550d21c66.png" alt="before"></p>
+<p><img src="https://user-images.githubusercontent.com/9880101/58248726-721fe900-7d8f-11e9-896c-0e430a868a02.png" alt="before"></p>
 <h2 id="1-联系方式的定义优化"><a href="#1-联系方式的定义优化" class="headerlink" title="1. 联系方式的定义优化"></a>1. 联系方式的定义优化</h2><p><img src="https://user-images.githubusercontent.com/9880101/57911729-1e0e9380-78bb-11e9-9f83-89a083ab32dc.png" alt="Group 28 2"></p>
 <blockquote>
 <p>字段定义:</p>
@@ -90,7 +90,7 @@
 <li><p>隐私问题，产品的字段定义这里必须要填写手机，但毕竟国外对个人隐私比较注重，手机号并不是所有人都愿意提供给第三方的，接收自己并不想要的广告或造成信息泄露；</p>
 </li>
 </ol>
-<p>所以，<strong>Mobile Number</strong>这里并不能判断填写的是否是真实的手机号码，也不能强制要求填写手机号码。</p>
+<p>所以，<strong>Mobile Number</strong>这里并不能强制要求填写手机号码，也没有统一规则判断所填写的是否是真实的手机号码。</p>
 <p>首先想想为什么要填写联系号码，对于提供服务的店铺来说，获取顾客的联系号码对他们有以下的作用：</p>
 <ol>
 <li>联系客服确认预约；</li>
@@ -111,10 +111,10 @@
 <p>   具体如下图</p>
 <p><img src="https://user-images.githubusercontent.com/9880101/57914072-8dd34d00-78c0-11e9-88aa-9cd78190c0ec.png" alt="Group 39"></p>
 <h2 id="3-校验问题"><a href="#3-校验问题" class="headerlink" title="3. 校验问题"></a>3. 校验问题</h2><p><img src="https://user-images.githubusercontent.com/9880101/57915963-7b5b1280-78c4-11e9-8ac0-cceb4b35afd9.png" alt="verification"></p>
-<p>由于并不是所有顾客都愿意提供姓名、联系号码、邮箱，因此没有固定某一项内容是必填，而把这几项能识别顾客的信息只需要其中一个即可。</p>
+<p>姓名、联系号码、邮箱都能作为顾客的识别信息，由于并不是所有顾客都愿意提供，因此没有办法固定某一项内容是必填，而是只需要填写其中一个即可。</p>
 <p>添加顾客的时候<strong>Name</strong>、<strong>Phone</strong>、<strong>Email</strong>中共5个输入框，至少要填写任意一项，不然在创建或修改顾客时，无法知道填写的是哪一个顾客。</p>
 <p>但现在校验提醒的时候只针对了联系方式，这里就会容易让人误解成 Phone Number是必填项。</p>
-<p>如果针对其中某一项进行提示会让人产生误解只有该项必填，并且提示的内容与该项的信息并不完全等同更会让人费解，这里可以使用非浮层alert提示。</p>
+<p>由于针对其中某一项进行提示，，并且提示文案与该项的信息并不完全匹配，反而更会让人费解。</p>
 <p>所以，在校验提醒的方式上可以优化，如下图</p>
 <p><img src="https://user-images.githubusercontent.com/9880101/57917432-3edce600-78c7-11e9-9672-0cd4ed6f7ae3.png" alt="Group 25"></p>
 <h2 id="4-其它改进点"><a href="#4-其它改进点" class="headerlink" title="4. 其它改进点"></a>4. 其它改进点</h2><p>视觉上有下面两点调整，大大提升表单了整体的阅读舒适性。</p>
@@ -125,7 +125,11 @@
 <p><img src="https://user-images.githubusercontent.com/9880101/57926255-676fda80-78dd-11e9-9ec5-f75430424dd0.png" alt="表单区域"></p>
 </li>
 </ol>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p><img src="https://user-images.githubusercontent.com/9880101/57917900-48b31900-78c8-11e9-8e77-e80bd04f0d80.png" alt="before after"></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>看看修改前后的区别。</p>
+<blockquote>
+<p>细节的改变在肉眼上会比较难发现，但使用起来的体验能让人察觉到。</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/9880101/57917900-48b31900-78c8-11e9-8e77-e80bd04f0d80.png" alt="before after"></p>
 
   </article>
   <footer class="f-cf">
