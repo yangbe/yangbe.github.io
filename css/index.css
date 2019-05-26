@@ -356,6 +356,11 @@ body {
       display: block; }
     .article > .content figcaption {
       font-size: 14px; }
+    .article > .content code {
+      color: #f0534e;
+      background-color: #f8f8f8;
+      font-size: 14px;
+      font-family: 'Menlo', 'Roboto Mono', Monaco, courier, monospace; }
     .article > .content blockquote {
       padding: 10px 0 10px 0;
       color: #79827e;
@@ -457,9 +462,6 @@ table td:nth-child(1) {
     color: #5F6EEF; }
   .about .content {
     text-align: center; }
-    @media screen and (max-width: 600px) {
-      .about .content {
-        padding: 0 30px 0 30px; } }
   .about .avatar {
     border-radius: 50%; }
   .about .title {
@@ -476,21 +478,33 @@ table td:nth-child(1) {
     @media screen and (max-width: 600px) {
       .about .bio {
         margin-bottom: 30px; } }
+  .about article {
+    border: 1px solid #e7eaee;
+    border-radius: 8px;
+    padding: 20px 0px 20px 30px;
+    margin-bottom: 26px; }
+    .about article .main-title {
+      text-align: left;
+      margin: 6px 0;
+      font-size: 22px;
+      color: #46515C; }
   .about .mytable {
-    width: 100%; }
+    width: 100%;
+    margin: 18px 0 0 0; }
     .about .mytable th, .about .mytable tr, .about .mytable td {
-      border-top: none;
+      border-bottom: none;
       border-right: none;
       border-left: none; }
     .about .mytable th, .about .mytable td {
       text-align: left;
-      border-bottom: 1px solid #f2f4f7;
-      padding: 7px 14px;
+      border-top: 1px solid #f2f4f7;
+      padding: 7px 14px 7px 0;
       color: #46515C;
       line-height: 60px;
       background-color: #ffffff; }
     .about .mytable th {
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 500;
       width: 42%; }
       @media screen and (max-width: 600px) {
         .about .mytable th {
