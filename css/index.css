@@ -19,6 +19,9 @@ a {
   a:hover {
     color: #5694f1; }
 
+hr {
+  border: 1px solid #e4e7e8; }
+
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
 
@@ -152,7 +155,7 @@ body {
     @media screen and (max-width: 600px) {
       #footer .nav-icn {
         float: none;
-        font-size: 28px;
+        font-size: 22px;
         font-style: normal; } }
   #footer .nav-icn.iconfont.icon-dribbble:hover {
     color: #EA4c89; }
@@ -166,8 +169,7 @@ body {
     color: #24292e; }
   #footer .email {
     float: right;
-    font-weight: 500;
-    color: #5694f1; }
+    font-weight: 500; }
   @media screen and (max-width: 600px) {
     #footer {
       margin-top: 40px;
@@ -274,6 +276,7 @@ body {
   background-color: white;
   color: #35495D;
   font-size: 16px;
+  font-weight: 400;
   line-height: 30px; }
   .article > .title {
     font-size: 40px;
@@ -357,18 +360,20 @@ body {
     .article > .content figcaption {
       font-size: 14px; }
     .article > .content code {
+      padding: 6px 10px;
       color: #f0534e;
       background-color: #f8f8f8;
       font-size: 14px;
-      font-family: 'Menlo', 'Roboto Mono', Monaco, courier, monospace; }
+      font-family: monospace;
+      border-radius: 4px; }
     .article > .content blockquote {
       padding: 10px 0 10px 0;
-      color: #79827e;
-      border-left: 5px solid #48b884;
-      padding-left: 15px;
+      color: #7f848a;
+      border-left: 4px solid #c1d495;
+      padding: 15px 15px;
       font-size: 16px;
       margin: 15px 0 15px 0;
-      background-color: #edf8f3; }
+      background-color: #f9f9f9; }
       .article > .content blockquote > :last-child {
         margin-bottom: 0; }
     .article > .content * {
@@ -459,7 +464,7 @@ table td:nth-child(1) {
   font-size: 16px;
   line-height: 30px; }
   .about a {
-    color: #5F6EEF; }
+    color: #5694f1; }
   .about .content {
     text-align: center; }
   .about .avatar {
@@ -473,7 +478,7 @@ table td:nth-child(1) {
   .about .bio {
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 60px;
+    margin: 20px 0 60px 0;
     color: #8D97A1; }
     @media screen and (max-width: 600px) {
       .about .bio {
@@ -524,7 +529,7 @@ table td:nth-child(1) {
     position: relative;
     z-index: 0;
     box-sizing: border-box;
-    width: 33.3333%;
+    width: 50%;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px; }
@@ -574,3 +579,38 @@ table td:nth-child(1) {
   @media screen and (max-width: 600px) {
     .tagcloud {
       padding: 60px 40px 60px 40px; } }
+
+#article-toc-inner::after, #article-toc-inner::before, .inner::after, .inner::before {
+  content: "";
+  display: table; }
+
+#article-toc-inner::after, .inner::after {
+  clear: both; }
+
+#article-toc {
+  display: none;
+  float: right;
+  width: 25%;
+  margin-right: -220px;
+  opacity: .8; }
+
+@media screen and (min-width: 768px) {
+  #article-toc {
+    display: block; } }
+
+#article-toc .fixed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 220px;
+  padding-top: 55px; }
+
+.fixed #article-toc-inner {
+  position: fixed;
+  width: 220px;
+  top: 0;
+  bottom: 0;
+  padding-top: 55px; }
+
+#article-toc-inner ol {
+  margin-left: -16px; }
