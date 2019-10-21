@@ -228,7 +228,8 @@ body {
       line-height: 30px;
       margin-top: 20px;
       margin-bottom: 15px;
-      color: #4c6073; }
+      color: #4c6073;
+      letter-spacing: 0.04rem; }
     .project-card > .ctnWrap > .sub {
       font-size: 16px;
       line-height: 30px;
@@ -330,7 +331,8 @@ body {
     .article > .content p {
       font-size: 16px;
       line-height: 30px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      letter-spacing: 0.06rem; }
     .article > .content img {
       width: 100%;
       padding: 0px;
@@ -369,7 +371,7 @@ body {
     .article > .content blockquote {
       padding: 10px 0 10px 0;
       color: #7f848a;
-      border-left: 4px solid #c1d495;
+      border-left: 4px solid #aed15c;
       padding: 15px 15px;
       font-size: 16px;
       margin: 15px 0 15px 0;
