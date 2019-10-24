@@ -5,12 +5,12 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>个性化菜单 | Liu.jianyang</title>
+  <title>关于微信公众号个性化菜单的产品模型分析和思考 | Liu.jianyang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="背景概述 微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用。产品经理计划要在自家产品加上这个功能，在阅读官方的开发文档后，就设计了产品原型，方案A就是主要的设计思路。 但在UI设计过程中，我们发现产品提供的产品原型方案在可用性和使用场景上存在欠妥的地方，双方对个性化菜单上也有着不一样的理解。于是重新换了种思路设计了方案B，后续再与产品作进一步沟通。 方案分析方案A和方案B，是">
 <meta name="keywords" content="design">
 <meta property="og:type" content="article">
-<meta property="og:title" content="个性化菜单">
+<meta property="og:title" content="关于微信公众号个性化菜单的产品模型分析和思考">
 <meta property="og:url" content="https://yangbe.github.io/posts/9f178846/index.html">
 <meta property="og:site_name" content="Liu.jianyang">
 <meta property="og:description" content="背景概述 微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用。产品经理计划要在自家产品加上这个功能，在阅读官方的开发文档后，就设计了产品原型，方案A就是主要的设计思路。 但在UI设计过程中，我们发现产品提供的产品原型方案在可用性和使用场景上存在欠妥的地方，双方对个性化菜单上也有着不一样的理解。于是重新换了种思路设计了方案B，后续再与产品作进一步沟通。 方案分析方案A和方案B，是">
@@ -19,11 +19,12 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67074859-8a6c2680-f1bc-11e9-95a4-c5925a154ba6.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67074655-20538180-f1bc-11e9-88eb-c4d7c7fde27b.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67075824-84774500-f1be-11e9-9dc6-32843d1450d2.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67174422-8cb8c580-f3f4-11e9-9201-db5480324e35.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67063258-a52ca400-f198-11e9-94a8-82355d44db39.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67063268-b07fcf80-f198-11e9-93ae-d9e58a6f3128.png">
-<meta property="og:updated_time" content="2019-10-21T12:48:37.699Z">
+<meta property="og:updated_time" content="2019-10-24T17:23:17.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个性化菜单">
+<meta name="twitter:title" content="关于微信公众号个性化菜单的产品模型分析和思考">
 <meta name="twitter:description" content="背景概述 微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用。产品经理计划要在自家产品加上这个功能，在阅读官方的开发文档后，就设计了产品原型，方案A就是主要的设计思路。 但在UI设计过程中，我们发现产品提供的产品原型方案在可用性和使用场景上存在欠妥的地方，双方对个性化菜单上也有着不一样的理解。于是重新换了种思路设计了方案B，后续再与产品作进一步沟通。 方案分析方案A和方案B，是">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/9880101/67141909-03d74800-f295-11e9-9b59-c197302a1789.png">
   
@@ -65,7 +66,7 @@
 
 </nav>
     <div id="main"><section class="article">
-  <h2 class="title">个性化菜单</h2>
+  <h2 class="title">关于微信公众号个性化菜单的产品模型分析和思考</h2>
   <p class="sub">Oct 18, 2019</p>
   <!-- toc目录 -->
   <!-- <aside id="article-toc" role="navigation" class="fixed">
@@ -73,7 +74,7 @@
         <strong class="sidebar-title">
             目录
         </strong>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#背景概述"><span class="toc-text">背景概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方案分析"><span class="toc-text">方案分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方案A"><span class="toc-text">方案A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案B"><span class="toc-text">方案B</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证"><span class="toc-text">验证</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题回归"><span class="toc-text">问题回归</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#思考和启发"><span class="toc-text">思考和启发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一性原理"><span class="toc-text">第一性原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象化功能，总结规律和模式"><span class="toc-text">抽象化功能，总结规律和模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#演推和预判"><span class="toc-text">演推和预判</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#借助工具"><span class="toc-text">借助工具</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#背景概述"><span class="toc-text">背景概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方案分析"><span class="toc-text">方案分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方案A"><span class="toc-text">方案A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案B"><span class="toc-text">方案B</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证"><span class="toc-text">验证</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题回归"><span class="toc-text">问题回归</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#思考和启发"><span class="toc-text">思考和启发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一性原理"><span class="toc-text">第一性原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象化功能，总结规律和模式"><span class="toc-text">抽象化功能，总结规律和模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优先业务数据建模"><span class="toc-text">优先业务数据建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#演推和预判"><span class="toc-text">演推和预判</span></a></li></ol></li></ol>
     </div>
 </aside> -->
   <article class="content">
@@ -81,7 +82,7 @@
 <p>微信公众号平台提供了<strong>个性化菜单</strong>的相关接口，第三方开发者可以直接调取使用。产品经理计划要在自家产品加上这个功能，在阅读官方的开发文档后，就设计了产品原型，方案A就是主要的设计思路。</p>
 <p>但在UI设计过程中，我们发现产品提供的产品原型方案在可用性和使用场景上存在欠妥的地方，双方对个性化菜单上也有着不一样的理解。于是重新换了种思路设计了方案B，后续再与产品作进一步沟通。</p>
 <h1 id="方案分析"><a href="#方案分析" class="headerlink" title="方案分析"></a>方案分析</h1><p>方案A和方案B，是基于对个性化菜单的两种不同的理解模型展开的，对UI设计的影响可以控制得比较小，但在产品功能的设计思路、后端底层数据存储和处理却是完全不一样的思路。</p>
-<p>其中方案A是存在好几个问题，也正是这几个问题确定了这个方案不太可能继续往下走。由于功能设计的拓展性差和对实际使用场景考虑的不周到，最终导致的结果只会是推倒重来，重新修改产品设计和开发。方案B除了能满足产品目标，还弥补了方案A的问题。</p>
+<p>方案A存在好几个问题，也正是这几个问题确定了这个方案不太可能继续往下走。由于功能设计的拓展性差和对实际使用场景考虑的不周到，最终导致的结果只会是推倒重来，重新修改产品设计和开发。方案B除了能满足产品目标，还弥补了方案A的问题。</p>
 <p>下面我们来看看方案A和方案B的差异和优缺点。</p>
 <h2 id="方案A"><a href="#方案A" class="headerlink" title="方案A"></a>方案A</h2><p><img src="https://user-images.githubusercontent.com/9880101/67074859-8a6c2680-f1bc-11e9-95a4-c5925a154ba6.png" alt="Modal1"></p>
 <p><strong>模型：</strong></p>
@@ -207,16 +208,18 @@
 <li>把现象或问题总结成规律和模式；</li>
 <li>跳出已有的思维模式，切换其它角度看问题，容易寻找创新点和改进点；</li>
 </ul>
+<h2 id="优先业务数据建模"><a href="#优先业务数据建模" class="headerlink" title="优先业务数据建模"></a>优先业务数据建模</h2><p>数据建模是指根据业务特点，总结归纳和设计业务数据对象之间关系的过程。虽然数据建模通常用在数据库设计里，但它实质上也是一个抽象化的过程，所以在产品设计过程中可以把它作为抽象化业务、归纳和设计规则的一种方法。</p>
+<p>在B端的产品设计里，有很多的功能需要业务数据建模，比如账号体系、权限(RBAC相关的模型)，还有上面提到的公众号个性化菜单。在进入产品细节方案设计的时候，我们都会经常忽略基本的业务数据建模，直接着手每个页面的具体功能和交互设计，因为基础的底层数据关系没有梳理清楚，导至最后陷入了痛苦的混乱逻辑当中，我们的方案A就是典行没有做好数据建模。理想的做法是，<strong>先进行业务数据建模，然后再梳理流程和确认页面如何流转，最后才是每个页面的细节设计</strong>。</p>
+<p>做数据建模还有一个好处是<strong>团队成员对业务功能的理解比较容易达成一致共识</strong>。当我们在设计或者描述一个业务功能的时候，不同的人大脑里对它的理解经常会不一样，有时甚至是截然相反的想法。出现这一点的原因是我们每个人大脑对业务功能的解析不一样，通过借助一些建模工具，比如<a href="https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/" target="_blank" rel="noopener">建模语言UML</a>、<a href="https://www.visual-paradigm.com/cn/guide/data-modeling/what-is-entity-relationship-diagram/" target="_blank" rel="noopener">ER图</a>，可以让自己梳理清晰流程、对象的关系和状态。模型是非常客观的，所以其他人在理解上不会容易地出现理解偏移。</p>
+<p>下面两个类图分别是方案A和方案B中默认菜单与个性化菜单之间的关系模型。我们也能通过这些模型去分析方案自身的做给缺点，也有助于其它对接人员比如开发人员查看和理解。</p>
+<p><img src="https://user-images.githubusercontent.com/9880101/67174422-8cb8c580-f3f4-11e9-9201-db5480324e35.png" alt="方案AB"></p>
+<p><img src="https://user-images.githubusercontent.com/9880101/67063258-a52ca400-f198-11e9-94a8-82355d44db39.png" alt="方案A"></p>
+<p><img src="https://user-images.githubusercontent.com/9880101/67063268-b07fcf80-f198-11e9-93ae-d9e58a6f3128.png" alt="方案B"></p>
 <h2 id="演推和预判"><a href="#演推和预判" class="headerlink" title="演推和预判"></a>演推和预判</h2><p>演推和预判，是自己检验设计方案、发现问题的一种好方法</p>
 <p>使用场景是否能满足</p>
 <p>流程是否完整闭环</p>
 <p>交互是清晰、有效率</p>
 <p>用户在使用的时候可能会发生哪些问题</p>
-<h2 id="借助工具"><a href="#借助工具" class="headerlink" title="借助工具"></a>借助工具</h2><p>当我们在设计或者描述一个业务功能的时候，不同的人大脑里对它的理解极有可能会不一样，有时甚至是截然相反的想法。</p>
-<p>出现这一点的原因是我们每个人大脑对业务功能的解析不一样，通过借助一些建模工具，比如<a href="https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/" target="_blank" rel="noopener">建模语言UML</a>、<a href="https://www.visual-paradigm.com/cn/guide/data-modeling/what-is-entity-relationship-diagram/" target="_blank" rel="noopener">ER图</a>，可以让自己梳理清晰流程、对象的关系和状态。模型是非常客观的，所以其他人在理解上不会容易地出现理解偏移。</p>
-<p>下面两个类图分别是方案A和方案B中默认菜单与个性化菜单之间的关系模型。我们也能通过这些模型去分析方案自身的做给缺点，也有助于其它对接人员比如开发人员查看和理解。</p>
-<p><img src="https://user-images.githubusercontent.com/9880101/67063258-a52ca400-f198-11e9-94a8-82355d44db39.png" alt="方案A"></p>
-<p><img src="https://user-images.githubusercontent.com/9880101/67063268-b07fcf80-f198-11e9-93ae-d9e58a6f3128.png" alt="方案B"></p>
 <hr>
 
 <p>[^百度百科]:引用于<a href="https://baike.baidu.com/item/%E6%8A%BD%E8%B1%A1%E5%8C%96/10844295?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
