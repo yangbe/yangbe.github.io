@@ -88,6 +88,8 @@ body {
         @media screen and (max-width: 600px) {
           #nav > .header > .title img {
             width: 64px; } }
+      #nav > .header > .title:hover {
+        opacity: .94; }
       @media screen and (max-width: 600px) {
         #nav > .header > .title {
           font-size: 36px;
