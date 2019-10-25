@@ -81,14 +81,13 @@ body {
       line-height: 48px;
       color: #35495D; }
       #nav > .header > .title img {
-        width: 48px; }
+        width: 40px;
+        padding-top: 8px; }
         #nav > .header > .title img:hover {
-          opacity: .7; }
+          transform: scale(1.12); }
         @media screen and (max-width: 600px) {
           #nav > .header > .title img {
             width: 64px; } }
-      #nav > .header > .title:hover {
-        opacity: .7; }
       @media screen and (max-width: 600px) {
         #nav > .header > .title {
           font-size: 36px;
