@@ -475,7 +475,7 @@ table td:nth-child(1) {
 .about {
   background-color: white;
   min-height: 300px;
-  padding: 0 0 0 0;
+  padding: 20px 0 0 0;
   font-size: 16px;
   line-height: 30px; }
   .about a {
@@ -493,7 +493,7 @@ table td:nth-child(1) {
   .about .bio {
     font-size: 16px;
     line-height: 30px;
-    margin: 0px 0 60px 0;
+    margin: 0px 0 20px 0;
     color: #8D97A1; }
     @media screen and (max-width: 600px) {
       .about .bio {
