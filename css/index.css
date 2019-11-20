@@ -143,7 +143,7 @@ body {
   color: #24292e; }
   #footer .nav-icn {
     float: left;
-    color: #35495D;
+    color: #24292e;
     margin-right: 15px;
     line-height: 24px;
     font-size: 24px;
@@ -166,7 +166,7 @@ body {
   #footer .nav-icn.iconfont.icon-googleplus:hover {
     color: #DD4B39; }
   #footer .nav-icn.iconfont.icon-github:hover {
-    color: #24292e; }
+    color: #0b0d0f; }
   #footer .email {
     float: right;
     font-weight: 500; }
@@ -331,8 +331,15 @@ body {
     .article > .content p {
       font-size: 16px;
       line-height: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
       letter-spacing: 0.06rem; }
+    .article > .content p > code {
+      padding: 2px 6px;
+      font-size: 14px;
+      color: #2DB6B5;
+      background-color: #E6F5F2;
+      border-radius: 3px;
+      letter-spacing: 0; }
     .article > .content img {
       width: 100%;
       padding: 0px;
@@ -374,21 +381,17 @@ body {
       display: block; }
     .article > .content figcaption {
       font-size: 14px; }
-    .article > .content code {
-      padding: 6px 10px;
-      color: #f0534e;
-      background-color: #f8f8f8;
+    .article > .content pre {
       font-size: 14px;
-      font-family: monospace;
       border-radius: 4px; }
     .article > .content blockquote {
       padding: 10px 0 10px 0;
-      color: #7f848a;
-      border-left: 4px solid #aed15c;
+      color: #466994;
+      border-left: 4px solid #589AFF;
       padding: 15px 15px;
       font-size: 16px;
       margin: 15px 0 15px 0;
-      background-color: #f9f9f9; }
+      background-color: #F0F8FF; }
       .article > .content blockquote > :last-child {
         margin-bottom: 0; }
     .article > .content * {
