@@ -385,13 +385,14 @@ body {
       font-size: 14px;
       border-radius: 4px; }
     .article > .content blockquote {
-      padding: 10px 0 10px 0;
+      padding: 15px 0 15px 0;
       color: #466994;
-      border-left: 4px solid #589AFF;
-      padding: 15px 15px;
-      font-size: 16px;
+      border-left: 4px solid #68a4ff;
+      padding: 12px 12px;
       margin: 15px 0 15px 0;
-      background-color: #F0F8FF; }
+      background-color: #f2f6fa; }
+      .article > .content blockquote > p {
+        font-size: 14px; }
       .article > .content blockquote > :last-child {
         margin-bottom: 0; }
     .article > .content * {
