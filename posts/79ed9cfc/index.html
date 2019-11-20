@@ -2,7 +2,7 @@
   
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
   <title>移动收银 · Liu.Jiany</title>
@@ -17,7 +17,7 @@
 <meta property="og:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67146806-3a2abc80-f2c1-11e9-8bd8-96e658fc4573.jpg">
-<meta property="og:updated_time" content="2019-11-11T02:31:00.941Z">
+<meta property="og:updated_time" content="2019-11-20T15:36:51.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动收银">
 <meta name="twitter:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
@@ -40,7 +40,7 @@
     <nav id="nav">
   <header class="header">
     <!-- <a href="/" class="title"><img  src="https://avatars0.githubusercontent.com/u/9880101?s=460&v=4"></a> -->
-    <a href="/" class="title"><img src="/images/logo.svg"></a>
+    <a href="/" class="title"><img  src="/images/logo.svg"></a>
     <!-- <a href="/" class="title">Liu.Jiany</a> -->
     <!-- <a href="/" class="title">Jiany.Liu</a> -->
     <div class="menu">
@@ -156,7 +156,7 @@
 <p><strong>优化：</strong></p>
 <p><img src="https://user-images.githubusercontent.com/9880101/58812684-f0647100-8654-11e9-8974-e8b1f2794755.png" alt="继续添加项目流程优化"></p>
 <ul>
-<li>进入待支付订单进行结账时，如果要增删改项目，只需要在当前页面操作，减少中间不必要环节，不需要跳转和重新走流程。具体看下方的<a href="# D.待支付订单页">待支付订单</a></li>
+<li>进入待支付订单进行结账时，如果要增删改项目，只需要在当前页面操作，减少中间不必要环节，不需要跳转和重新走流程。具体看下方的<a href="#D-待支付订单页">待支付订单</a></li>
 </ul>
 <h2 id="4-2-交互问题"><a href="#4-2-交互问题" class="headerlink" title="4.2 交互问题"></a>4.2 交互问题</h2><h3 id="A-收银主页"><a href="#A-收银主页" class="headerlink" title="A. 收银主页"></a>A. 收银主页</h3><p><img src="https://user-images.githubusercontent.com/9880101/59108441-73473d80-896d-11e9-8d36-47b4428db34d.png" alt="键盘问题"></p>
 <p><strong>问题：</strong></p>
@@ -222,7 +222,7 @@
 <li>完善顾客的信息，包括姓名、手机号、会员卡、余额等。</li>
 <li>服务商品按分类筛选。</li>
 <li>在当前页面可以随时修改项目信息，不需要先删除再重新添加。</li>
-<li>结合<a href="#A.开单流程">开单流程</a>的优化，在当前页面可以随时给顾客充值或开卡。</li>
+<li>结合<a href="#A-开单流程">开单流程</a>的优化，在当前页面可以随时给顾客充值或开卡。</li>
 </ul>
 <p><img src="https://user-images.githubusercontent.com/9880101/59110024-c79fec80-8970-11e9-9c04-4d6483631961.jpg" alt="开单主页优化"></p>
 <hr>
@@ -237,14 +237,14 @@
 <ul>
 <li><p>继续添加项目的操作，视觉上太弱不突出（字体太浅、放在顶部），并不容易能察觉到有这个操作。</p>
 </li>
-<li><p>其次在当前这个页面如果要继续添加项目，是需要跳转到项目的添加页面，并且重新走一遍流程，具体查看上面的<a href="#B.增删改项目流程">增删改项目流程</a>。</p>
+<li><p>其次在当前这个页面如果要继续添加项目，是需要跳转到项目的添加页面，并且重新走一遍流程，具体查看上面的<a href="#B-增删改项目流程">增删改项目流程</a>。</p>
 </li>
 </ul>
 <p><strong>优化：</strong></p>
 <ul>
 <li>增加可点击操作元素的面积</li>
 <li>列表结构化排列展示信息，设计上增大留白空间</li>
-<li>复用<a href="#C.开单主页面">开单</a>添加项目的交互，保证从开单到结账不同阶段，项目信息最大的可编辑性，以及操作交互上保持一致，减少学习成本。</li>
+<li>复用<a href="#C-开单主页面">开单</a>添加项目的交互，保证从开单到结账不同阶段，项目信息最大的可编辑性，以及操作交互上保持一致，减少学习成本。</li>
 </ul>
 <p><img src="https://user-images.githubusercontent.com/9880101/59110598-0da98000-8972-11e9-901d-a77fd3ddf88e.jpg" alt="待支付订单优化"></p>
 <hr>
@@ -340,14 +340,15 @@
     </div>
 
  
-  <a href="mailto:jiany.liu@qq.com" class="email">jiany.liu@qq.com</a>
+  <a href="mailto:jiany.liu@qq.com" class="email" >jiany.liu@qq.com</a>
 </footer>
 
 <!-- <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css">
 <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script> -->
 
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css"> 
+<link rel="stylesheet"
+href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css"> 
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
 
 
