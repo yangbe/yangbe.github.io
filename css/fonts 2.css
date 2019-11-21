@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1136188 */
+  src: url("//at.alicdn.com/t/font_1136188_byn80lv9irl.eot");
+  src: url("//at.alicdn.com/t/font_1136188_byn80lv9irl.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1136188_byn80lv9irl.woff2") format("woff2"), url("//at.alicdn.com/t/font_1136188_byn80lv9irl.woff") format("woff"), url("//at.alicdn.com/t/font_1136188_byn80lv9irl.ttf") format("truetype"), url("//at.alicdn.com/t/font_1136188_byn80lv9irl.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+  .iconfont.icon-behance::before {
+    content: '\e60f'; }
+  .iconfont.icon-twitter::before {
+    content: '\e611'; }
+  .iconfont.icon-googleplus::before {
+    content: '\e612'; }
+  .iconfont.icon-dribbble::before {
+    content: '\e610'; }
+  .iconfont.icon-github::before {
+    content: '\e60e'; }
+  .iconfont.icon-arrow-left::before {
+    content: '\e91a'; }
+  .iconfont.icon-arrow-right::before {
+    content: '\e636'; }
