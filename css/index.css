@@ -385,6 +385,8 @@ body {
     .article > .content pre {
       font-size: 14px;
       border-radius: 4px; }
+      .article > .content pre > .hljs {
+        color: #bfbfbf; }
     .article > .content blockquote {
       padding: 15px 0 15px 0;
       color: #466994;
