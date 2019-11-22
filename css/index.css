@@ -67,13 +67,15 @@ body {
 #nav {
   z-index: 100;
   margin-bottom: 20px;
-  padding: 20px 0 0 0;
+  padding: 12px 0 0 0;
   background-color: #ffffff; }
   #nav > .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 10px; }
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 40px; }
     #nav > .header > .title {
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
@@ -136,7 +138,9 @@ body {
       padding: 20px 0 10px 0; } }
 
 #footer {
-  margin-top: 80px;
+  margin: 60px auto;
+  padding: 0 40px;
+  max-width: 768px;
   font-size: 14px;
   line-height: 22px;
   opacity: 0.8;
