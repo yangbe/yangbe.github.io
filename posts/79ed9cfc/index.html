@@ -16,7 +16,7 @@
 <meta property="og:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67146806-3a2abc80-f2c1-11e9-8bd8-96e658fc4573.jpg">
-<meta property="og:updated_time" content="2019-11-20T15:36:51.664Z">
+<meta property="og:updated_time" content="2019-11-20T15:36:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动收银">
 <meta name="twitter:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
@@ -52,17 +52,10 @@
 <body>
   <div id="container">
     <div id="main"><section class="article">
+
   <h2 class="title">移动收银</h2>
   <p class="sub">Jun 7, 2019</p>
-  <!-- toc目录 -->
-  <!-- <aside id="article-toc" role="navigation" class="fixed">
-    <div class="article-toc-inner">
-        <strong class="sidebar-title">
-            目录
-        </strong>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-介绍"><span class="toc-text">1. 介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-产品价值"><span class="toc-text">2. 产品价值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#店铺价值"><span class="toc-text">店铺价值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#平台价值"><span class="toc-text">平台价值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-用户画像"><span class="toc-text">3. 用户画像</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-问题-amp-优化"><span class="toc-text">4. 问题&amp;优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-流程问题"><span class="toc-text">4.1 流程问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A-开单流程"><span class="toc-text">A.开单流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-增删改项目流程"><span class="toc-text">B.增删改项目流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-交互问题"><span class="toc-text">4.2 交互问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A-收银主页"><span class="toc-text">A. 收银主页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-会员搜索"><span class="toc-text">B.会员搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C-开单主页面"><span class="toc-text">C.开单主页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#D-待支付订单页"><span class="toc-text">D.待支付订单页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#E-部分弹窗交互和设计问题"><span class="toc-text">E.部分弹窗交互和设计问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-功能"><span class="toc-text">4.3 功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-总结"><span class="toc-text">5. 总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#设计的作用"><span class="toc-text">设计的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重构的设计原则"><span class="toc-text">重构的设计原则</span></a></li></ol></li></ol>
-    </div>
-</aside> -->
+ 
   <article class="content">
     <h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><p><strong>移动收银</strong>是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。</p>
 <ul>
@@ -311,9 +304,8 @@
       <a href="/posts/91dd17a8/" class="link f-fr">ABC→</a>
     
   </footer>
-</section>
 
-</div>
+</section></div>
   </div>
 </body>
 
