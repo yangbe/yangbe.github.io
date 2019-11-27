@@ -412,7 +412,13 @@ body {
   .article > footer {
     padding: 40px 0;
     border-top: solid 1px #eee; }
-    .article > footer > .link {
+    .article > footer .arrow {
+      border-radius: 3px;
+      color: #5694f1;
+      background: #F0F8FF;
+      padding: 4px;
+      margin: 6px; }
+    .article > footer .link {
       font-size: 16px;
       line-height: 22px;
       max-width: 50%; }
