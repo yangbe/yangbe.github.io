@@ -2,7 +2,7 @@
 @import url(reset.css);
 #container {
   max-width: 768px;
-  margin: 0 auto 75px;
+  margin: 60px auto 75px;
   padding: 0 40px; }
   @media screen and (max-width: 600px) {
     #container {
@@ -208,7 +208,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 70px 0;
-  margin: 100px 0 0 0;
+  margin: 0;
   background-color: white;
   border-bottom: 1px solid #e9ecf0;
   color: #35495D; }
@@ -526,7 +526,7 @@ table td:nth-child(1) {
     border: 1px solid #e7eaee;
     border-radius: 8px;
     padding: 20px 0px 20px 30px;
-    margin: 72px 0 0 26px; }
+    margin: 42px 0 0 0px; }
     .about article .main-title {
       text-align: left;
       margin: 6px 0;
@@ -557,7 +557,7 @@ table td:nth-child(1) {
       line-height: 28px; }
 
 .pflo {
-  margin-top: 100px; }
+  margin-top: 40px; }
   .pflo ul {
     display: flex;
     box-sizing: border-box;
