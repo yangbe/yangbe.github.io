@@ -65,7 +65,7 @@ body {
   clear: both; }
 
 #nav {
-  z-index: 100;
+  z-index: 102;
   width: 100%;
   margin-bottom: 20px;
   padding: 12px 0 0 0;
@@ -208,7 +208,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 70px 0;
-  margin: 40px 0 0 0;
+  margin: 100px 0 0 0;
   background-color: white;
   border-bottom: 1px solid #e9ecf0;
   color: #35495D; }
@@ -282,7 +282,7 @@ body {
         height: 240px; } }
 
 .article {
-  margin: 100px 0 80px;
+  margin: 128px 0 80px;
   padding: 0px 0px 0;
   background-color: white;
   color: #35495D;
@@ -526,7 +526,7 @@ table td:nth-child(1) {
     border: 1px solid #e7eaee;
     border-radius: 8px;
     padding: 20px 0px 20px 30px;
-    margin-bottom: 26px; }
+    margin: 72px 0 0 26px; }
     .about article .main-title {
       text-align: left;
       margin: 6px 0;
@@ -557,7 +557,7 @@ table td:nth-child(1) {
       line-height: 28px; }
 
 .pflo {
-  margin-top: 42px; }
+  margin-top: 100px; }
   .pflo ul {
     display: flex;
     box-sizing: border-box;
@@ -654,7 +654,7 @@ table td:nth-child(1) {
   @media screen and (min-width: 601px) and (max-width: 1279px) {
     #toc {
       right: 0px;
-      top: 61px;
+      top: 60px;
       height: 100%;
       bottom: 0px;
       box-shadow: -10px 4px 6px -10px rgba(38, 38, 38, 0.12); } }
