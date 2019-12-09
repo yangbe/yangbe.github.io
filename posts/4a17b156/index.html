@@ -52,12 +52,65 @@
 <body>
   <div id="container">
     <div id="main"><section class="article">
-
   <h2 class="title">Hello World</h2>
   <p class="sub">Apr 10, 2019</p>
- 
   <article class="content">
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    <!-- toc -->
+    <div class="mini_toc">
+      <div class="toc_icn">
+        <span></span>
+        <span></span> 
+        <span></span>
+        <span></span>
+      </div>
+    </div> 
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    </div>
+
+
+<script type="text/javascript">
+    var triggle = document.getElementsByClassName('mini_toc');
+    var toc = document.getElementById('toc');
+
+    var icn = document.getElementsByClassName('toc_icn');
+    var line = document.getElementsByTagName('span');
+    
+
+    // <1280px时，toc的默认隐藏，等价于toc的display默认为“none”
+    var key = false;
+
+    triggle[0].addEventListener('click', switch_toc, false);
+
+    function switch_toc() {
+        if(!key) {
+            toc.style.display = "block";
+            key = true;  
+        }else {
+            toc.style.display = "none";
+            key = false;
+        }  
+    }
+
+    triggle[0].onclick = function () {
+            for(let i=0; i < line.length; i++){
+                line[i].classList.toggle('op');
+            }
+    }
+    window.addEventListener('resize', function (){
+        if(document.body.clientWidth+15 > 1279){
+            toc.style.display = "block";
+        }else {
+            toc.style.display = "none";
+        }
+    }, false)
+
+ </script>
+        <div class="post_cnt"> <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <p><img src="https://user-images.githubusercontent.com/9880101/56469163-932bac00-6468-11e9-95da-97b06f83e5da.jpg" alt="product10"></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
 $ hexo new &quot;My New Post&quot;
@@ -86,9 +139,12 @@ $ hexo new &quot;My New Post&quot;
     }
 }
 </code></pre>
+</div>
+      
+    </div>
 
-  </article>
-  
+  </article> 
+
   <footer class="f-cf">
     
       <a href="/posts/91dd17a8/" class="link f-fl">
@@ -103,7 +159,7 @@ $ hexo new &quot;My New Post&quot;
       </a>
     
   </footer>
-
+  
 </section></div>
   </div>
 </body>
