@@ -16,7 +16,7 @@
 <meta property="og:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67146806-3a2abc80-f2c1-11e9-8bd8-96e658fc4573.jpg">
-<meta property="og:updated_time" content="2019-11-26T04:46:45.000Z">
+<meta property="og:updated_time" content="2019-11-26T04:46:45.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动收银">
 <meta name="twitter:description" content="1. 介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台">
@@ -35,9 +35,6 @@
         
           
               <a href="/" class="nav-menu ">博客</a>
-            
-          
-              <a href="/about" class="nav-menu ">关于</a>
             
           
         
@@ -93,18 +90,20 @@
         }  
     }
 
-    triggle[0].onclick = function () {
-            for(let i=0; i < line.length; i++){
-                line[i].classList.toggle('op');
-            }
-    }
-    window.addEventListener('resize', function (){
+    function toc_showhide(){
         if(document.body.clientWidth+15 > 1279){
             toc.style.display = "block";
         }else {
             toc.style.display = "none";
         }
-    }, false)
+    }
+    window.addEventListener('resize', toc_showhide, false)
+
+    triggle[0].onclick = function () {
+            for(let i=0; i < line.length; i++){
+                line[i].classList.toggle('op');
+            }
+    }
 
  </script>
         <div class="post_cnt"> <h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><p><strong>移动收银</strong>是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。</p>

@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57176887-6461fc80-6e90-11e9-8fef-84697a127714.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57174499-9b291a00-6e72-11e9-8f9e-f30a9080fa2a.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57175931-763da280-6e84-11e9-805a-66bf6c86cc10.png">
-<meta property="og:updated_time" content="2019-05-04T10:47:26.764Z">
+<meta property="og:updated_time" content="2019-05-04T10:47:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计体系">
 <meta name="twitter:description" content="设计体系是什么？–图– 设计体系 可以看作是一系列可以复用元素和设计模式的集合，比如常见的导航、tabs、图标、输入框、通知提示、时间选择，也包括动效、声音，以及对交互模式的定义等等。 任何一个应用程序的可见可感觉的部分都由这些定义基础的元素组成。它们是由一套清晰的规范来指引和约束着设计，保持一致性，并且可以让各个组件组合起来，搭建任意的应用程序。设计体系的工作可以说是一个持续性学习、构建和演化的">
@@ -44,9 +44,6 @@
         
           
               <a href="/" class="nav-menu ">博客</a>
-            
-          
-              <a href="/about" class="nav-menu ">关于</a>
             
           
         
@@ -102,18 +99,20 @@
         }  
     }
 
-    triggle[0].onclick = function () {
-            for(let i=0; i < line.length; i++){
-                line[i].classList.toggle('op');
-            }
-    }
-    window.addEventListener('resize', function (){
+    function toc_showhide(){
         if(document.body.clientWidth+15 > 1279){
             toc.style.display = "block";
         }else {
             toc.style.display = "none";
         }
-    }, false)
+    }
+    window.addEventListener('resize', toc_showhide, false)
+
+    triggle[0].onclick = function () {
+            for(let i=0; i < line.length; i++){
+                line[i].classList.toggle('op');
+            }
+    }
 
  </script>
         <div class="post_cnt"> <h1 id="设计体系是什么？"><a href="#设计体系是什么？" class="headerlink" title="设计体系是什么？"></a>设计体系是什么？</h1><p>–图–</p>

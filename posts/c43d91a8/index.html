@@ -15,12 +15,12 @@
 <meta property="og:site_name" content="Liu.Jiany">
 <meta property="og:description" content="人在正向激励下才能做更多和尝试，要积极给予对方正面反馈  在各自能力模块取阶段性进步后给予鼓励 某重大问题开始变好和尝试时鼓励 一件任务最好是从他人所擅长的的入手，增强他们的自信心 钱很重要，但如果成员做任何的努力都没有得到激励，任何人的耐心都会有一个消耗殆尽的时间   沟通  多沟通是团队凝聚的最好办法，不管是工作上的还是私下的 小团队会经常有，做好自己最重要   对于问题  直接说问题（注意">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://user-images.githubusercontent.com/9880101/70453150-3d813e00-1ae3-11ea-9dbd-0a2db64f2937.png">
-<meta property="og:updated_time" content="2019-12-09T16:29:11.719Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/9880101/70486148-bad0a100-1b2b-11ea-9207-9d5387a8abda.png">
+<meta property="og:updated_time" content="2019-12-10T01:02:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="团队合作注意问题">
 <meta name="twitter:description" content="人在正向激励下才能做更多和尝试，要积极给予对方正面反馈  在各自能力模块取阶段性进步后给予鼓励 某重大问题开始变好和尝试时鼓励 一件任务最好是从他人所擅长的的入手，增强他们的自信心 钱很重要，但如果成员做任何的努力都没有得到激励，任何人的耐心都会有一个消耗殆尽的时间   沟通  多沟通是团队凝聚的最好办法，不管是工作上的还是私下的 小团队会经常有，做好自己最重要   对于问题  直接说问题（注意">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/9880101/70453150-3d813e00-1ae3-11ea-9dbd-0a2db64f2937.png">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/9880101/70486148-bad0a100-1b2b-11ea-9207-9d5387a8abda.png">
   
     <link rel="icon" href="/images/favicon.ico">
   
@@ -35,9 +35,6 @@
         
           
               <a href="/" class="nav-menu ">博客</a>
-            
-          
-              <a href="/about" class="nav-menu ">关于</a>
             
           
         
@@ -93,18 +90,20 @@
         }  
     }
 
-    triggle[0].onclick = function () {
-            for(let i=0; i < line.length; i++){
-                line[i].classList.toggle('op');
-            }
-    }
-    window.addEventListener('resize', function (){
+    function toc_showhide(){
         if(document.body.clientWidth+15 > 1279){
             toc.style.display = "block";
         }else {
             toc.style.display = "none";
         }
-    }, false)
+    }
+    window.addEventListener('resize', toc_showhide, false)
+
+    triggle[0].onclick = function () {
+            for(let i=0; i < line.length; i++){
+                line[i].classList.toggle('op');
+            }
+    }
 
  </script>
         <div class="post_cnt"> <ul>

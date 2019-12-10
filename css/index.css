@@ -682,7 +682,7 @@ table td:nth-child(1) {
   text-align: center;
   position: fixed;
   right: -1px;
-  bottom: 60px;
+  top: 72px;
   cursor: pointer;
   box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2); }
   @media screen and (min-width: 1280px) {
