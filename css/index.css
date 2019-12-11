@@ -352,8 +352,8 @@ body {
       border-radius: 3px;
       letter-spacing: 0.03rem; }
     .article > .content img {
-      padding: 0px;
-      margin: 14px 0; }
+      padding: 0;
+      margin: 10px 0 0 0; }
     .article > .content a {
       color: #5694f1; }
     .article > .content strong {
