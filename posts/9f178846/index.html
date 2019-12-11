@@ -90,14 +90,15 @@
         }  
     }
 
-    function toc_showhide(){
-        if(document.body.clientWidth+15 > 1279){
-            toc.style.display = "block";
-        }else {
-            toc.style.display = "none";
-        }
-    }
-    window.addEventListener('resize', toc_showhide, false)
+    // function toc_showhide(){
+    //     if(document.body.clientWidth+15 > 1279){
+    //         toc.style.display = "block";
+    //     }else {
+    //         toc.style.display = "none";
+    //     }
+    // }
+
+    // window.addEventListener('resize', toc_showhide, false)
 
     triggle[0].onclick = function () {
             for(let i=0; i < line.length; i++){
@@ -277,7 +278,14 @@
     
   </footer>
   
-</section></div>
+</section>
+
+<!-- 引用hightlight代码高亮 -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css"> 
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script></div>
   </div>
 </body>
 
@@ -293,11 +301,3 @@
     </div>
   <a href="mailto:jiany.liu@qq.com" class="email" >jiany.liu@qq.com</a>
 </footer>
-
-
-<!-- 引用hightlight代码高亮 -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css"> 
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
