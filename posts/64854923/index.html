@@ -16,7 +16,7 @@
 <meta property="og:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/70579896-e798bd00-1bec-11ea-8c4a-de24908f21df.png">
-<meta property="og:updated_time" content="2019-12-11T05:40:45.153Z">
+<meta property="og:updated_time" content="2019-12-11T05:45:10.115Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深浅模式设计">
 <meta name="twitter:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
@@ -238,7 +238,9 @@ color-basic-1500: #121212,
 
 <h2 id="颜色作用域"><a href="#颜色作用域" class="headerlink" title="颜色作用域"></a>颜色作用域</h2><p>我们把每个模式下所拥有的<strong>颜色集</strong>称为<strong>作用域（Scope）</strong>，每个模式都会有自己的颜色作用域，用于处理模式之间切换的颜色集管理。</p>
 <p><span style="font-weight:900;">模式之间颜色处理的方式有两种：</span></p>
-<p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式1(建议)：设置一个默认模式（Default Mode – 例如浅色模式），另外，其它模式相对默认模式有<u>差异的部分单独定义</u>，作为该模式独有的颜色作用域，在模式切换时，这部分颜色集会有更高的优先级。对于某些没有被定义的颜色，会获取和复用默认模式的颜色作用域里对应部分。</p><br><p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式2：每种模式都单独设置颜色作用域，模式切换时，只读取自己的颜色作用域。</p>
+<p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式1(建议)：设置一个默认模式（Default Mode – 例如浅色模式），另外，其它模式相对默认模式有<u>差异的部分单独定义</u>，作为该模式独有的颜色作用域，在模式切换时，这部分颜色集会有更高的优先级。对于某些没有被定义的颜色，会获取和复用默认模式的颜色作用域里对应部分。</p>
+
+<p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式2：每种模式都单独设置颜色作用域，模式切换时，只读取自己的颜色作用域。</p>
 
 
 <h2 id="解构基础要素"><a href="#解构基础要素" class="headerlink" title="解构基础要素"></a>解构基础要素</h2><p>在设计语言里面，除了颜色，我们发现能够影响UI外观的是一系列通用的基础要素，它们不是按钮、选择器这种级别的组件。当我们把这些界面组件继续往下解构时，它们可以拆分成下面几项（如上面所示）：</p>
