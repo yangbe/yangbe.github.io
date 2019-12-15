@@ -16,7 +16,7 @@
 <meta property="og:description" content="问题在测试填写这个表单时，发现有下面几个问题：  手机号、电话的填写被限制得过死； 相似属性的信息没有放在一起； 信息的阅读性混乱，文案长短相差有点大； 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解； 表单左右区域的空间利用的太拥挤，千万视觉上的压迫感；   改进1. 联系方式的定义优化  原产品方案对这两个字段的定义: Mobile Number ：只能填写手机号码；Seconda">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57938579-1078fe00-78fb-11e9-85ea-f80757719961.png">
-<meta property="og:updated_time" content="2019-09-27T03:16:18.000Z">
+<meta property="og:updated_time" content="2019-09-27T03:16:18.807Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Add-Customer 表单优化">
 <meta name="twitter:description" content="问题在测试填写这个表单时，发现有下面几个问题：  手机号、电话的填写被限制得过死； 相似属性的信息没有放在一起； 信息的阅读性混乱，文案长短相差有点大； 校验出错提示不能明确告诉使用者如何解决，反而还容易造成误解； 表单左右区域的空间利用的太拥挤，千万视觉上的压迫感；   改进1. 联系方式的定义优化  原产品方案对这两个字段的定义: Mobile Number ：只能填写手机号码；Seconda">
@@ -49,7 +49,6 @@
   <h2 class="title">Add-Customer 表单优化</h2>
   <p class="sub">May 22, 2018</p>
   <article class="content">
-    <!-- toc -->
     <div class="mini_toc">
       <div class="toc_icn">
         <span></span>
@@ -70,13 +69,10 @@
 <script type="text/javascript">
     var triggle = document.getElementsByClassName('mini_toc');
     var toc = document.getElementById('toc');
-
     var icn = document.getElementsByClassName('toc_icn');
     var line = document.getElementsByTagName('span');
     
-
-    // <1280px时，toc的默认隐藏，等价于toc的display默认为“none”
-    var key = false;
+    var key = false;  // key作为控制toc开关状态的关联，<1280px时，toc的默认隐藏，等价于toc的display默认为“none”
 
     function switch_toc() {
         if(!key) {
@@ -88,14 +84,17 @@
         }  
     }
 
-    triggle[0].addEventListener('click', switch_toc, false);
-
-    triggle[0].onclick = function () {
-            for(let i=0; i < line.length; i++){
-                line[i].classList.toggle('op');
-            }
+    function toc_icn_state() {
+        for(let i=0; i < line.length; i++){
+            line[i].classList.toggle('op');
+        }
     }
 
+    triggle[0].addEventListener('click', switch_toc, false);
+
+    triggle[0].addEventListener('click', toc_icn_state, false);
+
+    // >1280px,处理窗口改变大小时，强制让toc出现； 对应的key也为true，开关变为x，css控制其隐藏
     function toc_show(){
         if((document.body.clientWidth+15) > 1279) {
             toc.style.display = "block";
@@ -183,9 +182,9 @@
 
   <footer class="f-cf">
     
-      <a href="/posts/2c0c1d0b/" class="link f-fl">
+      <a href="/posts/c43d91a8/" class="link f-fl">
         <span class="arrow"> ←</span>
-        设计体系
+        团队合作注意问题
       </a>
     
     

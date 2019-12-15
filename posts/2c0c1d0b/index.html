@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57176887-6461fc80-6e90-11e9-8fef-84697a127714.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57174499-9b291a00-6e72-11e9-8f9e-f30a9080fa2a.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/57175931-763da280-6e84-11e9-805a-66bf6c86cc10.png">
-<meta property="og:updated_time" content="2019-05-04T10:47:26.000Z">
+<meta property="og:updated_time" content="2019-12-12T10:29:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计体系">
 <meta name="twitter:description" content="设计体系是什么？–图– 设计体系 可以看作是一系列可以复用元素和设计模式的集合，比如常见的导航、tabs、图标、输入框、通知提示、时间选择，也包括动效、声音，以及对交互模式的定义等等。 任何一个应用程序的可见可感觉的部分都由这些定义基础的元素组成。它们是由一套清晰的规范来指引和约束着设计，保持一致性，并且可以让各个组件组合起来，搭建任意的应用程序。设计体系的工作可以说是一个持续性学习、构建和演化的">
@@ -56,9 +56,8 @@
   <div id="container">
     <div id="main"><section class="article">
   <h2 class="title">设计体系</h2>
-  <p class="sub">Dec 17, 2018</p>
+  <p class="sub">Jun 17, 2019</p>
   <article class="content">
-    <!-- toc -->
     <div class="mini_toc">
       <div class="toc_icn">
         <span></span>
@@ -79,13 +78,10 @@
 <script type="text/javascript">
     var triggle = document.getElementsByClassName('mini_toc');
     var toc = document.getElementById('toc');
-
     var icn = document.getElementsByClassName('toc_icn');
     var line = document.getElementsByTagName('span');
     
-
-    // <1280px时，toc的默认隐藏，等价于toc的display默认为“none”
-    var key = false;
+    var key = false;  // key作为控制toc开关状态的关联，<1280px时，toc的默认隐藏，等价于toc的display默认为“none”
 
     function switch_toc() {
         if(!key) {
@@ -97,14 +93,17 @@
         }  
     }
 
-    triggle[0].addEventListener('click', switch_toc, false);
-
-    triggle[0].onclick = function () {
-            for(let i=0; i < line.length; i++){
-                line[i].classList.toggle('op');
-            }
+    function toc_icn_state() {
+        for(let i=0; i < line.length; i++){
+            line[i].classList.toggle('op');
+        }
     }
 
+    triggle[0].addEventListener('click', switch_toc, false);
+
+    triggle[0].addEventListener('click', toc_icn_state, false);
+
+    // >1280px,处理窗口改变大小时，强制让toc出现； 对应的key也为true，开关变为x，css控制其隐藏
     function toc_show(){
         if((document.body.clientWidth+15) > 1279) {
             toc.style.display = "block";
@@ -374,14 +373,14 @@
 
   <footer class="f-cf">
     
-      <a href="/posts/c43d91a8/" class="link f-fl">
+      <a href="/posts/c7c61052/" class="link f-fl">
         <span class="arrow"> ←</span>
-        团队合作注意问题
+        设计之于项目的价值
       </a>
     
     
-      <a href="/posts/bb3a1757/" class="link f-fr">
-        Add-Customer 表单优化
+      <a href="/posts/79ed9cfc/" class="link f-fr">
+        手机收银
         <span class="arrow"> → </span>
       </a>
     
