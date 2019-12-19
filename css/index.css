@@ -452,6 +452,20 @@ a::selection {
       margin: 20px 0; }
       .article > footer {
         padding: 10px 0; } }
+  .article .question {
+    text-align: center;
+    border-bottom: 1px dashed #eeeeee;
+    color: #aaadb1;
+    margin: 40px 0;
+    padding: 12px 0px 12px;
+    font-size: 18px; }
+  .article .optimization {
+    text-align: center;
+    border-bottom: 1px dashed #eeeeee;
+    color: #2BA876;
+    margin: 40px 0;
+    padding: 12px 0px 12px;
+    font-size: 18px; }
 
 table {
   width: 100%;
