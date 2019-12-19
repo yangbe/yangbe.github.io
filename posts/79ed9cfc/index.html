@@ -16,7 +16,7 @@
 <meta property="og:description" content="介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台收银员">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/67146806-3a2abc80-f2c1-11e9-8bd8-96e658fc4573.jpg">
-<meta property="og:updated_time" content="2019-12-18T02:18:21.861Z">
+<meta property="og:updated_time" content="2019-12-19T03:06:53.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手机收银">
 <meta name="twitter:description" content="介绍移动收银是提供给美业店铺营业SaaS服务的一部分，是现有桌面Web平台收银在移动场景下的补充，一套集商品、服务收银、开卡充值、购买赠送优惠券和疗程、还款等服务的系统。  主要功能：创建会员、查看会员消费信息、服务商品开单、开卡、充值、购买疗程套餐(含标准和自定义)、购买优惠券、卡升级、还款、卡金转赠、多收款方式包括手牌号收款、推送收款  面向行业：美容、美发、美甲等美业  目标人群：前台收银员">
@@ -145,12 +145,12 @@
 <p>原来的版本上线后，有上面几大方面的问题，最终导致的结果的手机收银的<strong>口碑差</strong>、<strong>使用率低</strong>，对购买服务的商家和我们平台来说都是一种损失。</p>
 <p>接下来，下面会从<strong>流程</strong>、<strong>交互</strong>和<strong>功能</strong>三个方面选取部分问题进入分析，以及对应的解决方案。主要的优化方向是流程交互，重塑用户在使用手机收银时的心智模型，目的是提升收银的效率和使用体验。</p>
 <p><img src="https://user-images.githubusercontent.com/9880101/71002915-2eba0d00-211b-11ea-92be-7735e99f75e6.png" alt="方法"></p>
-<h2 id="流程问题"><a href="#流程问题" class="headerlink" title="流程问题"></a>流程问题</h2><h3 id="开单流程"><a href="#开单流程" class="headerlink" title="开单流程"></a>开单流程</h3><section style="font-weight:700;color:#7c7c7c;text-align:center;margin:0 0 20px 0;">原流程概览</section>
+<h2 id="流程问题"><a href="#流程问题" class="headerlink" title="流程问题"></a>流程问题</h2><h3 id="开单流程"><a href="#开单流程" class="headerlink" title="开单流程"></a>开单流程</h3><section style="font-size:18px;color:#aaadb1;text-align:center;margin:0 0 20px 0;">原流程概览</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70991016-a713d480-2101-11ea-91f1-45f523b51ec6.png" alt="原有流程"></p>
 <p><img src="https://user-images.githubusercontent.com/9880101/71002497-59f02c80-211a-11ea-9027-9674f949efde.png" alt="原开单流程页面"></p>
-<section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<section class="question">问题</section>
 
 
 <ul>
@@ -169,7 +169,7 @@
 </ul>
 <p><strong>问题概括：</strong></p>
 <p><code>业务流程单线程</code> <code>产品交互不符合心智模型</code> <code>不必要的重复流程</code> <code>页面跳转多/连贯性差</code>   </p>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <p>针对这些问题，对开单的流程进行了优化，流程概览如下图：</p>
@@ -188,11 +188,11 @@
 <p><br></p>
 <hr>
 <p><br></p>
-<h3 id="增删改项目流程"><a href="#增删改项目流程" class="headerlink" title="增删改项目流程"></a>增删改项目流程</h3><section style="font-weight:700;color:#7c7c7c;text-align:center;margin:0 0 20px 0;">原流程概览</section>
+<h3 id="增删改项目流程"><a href="#增删改项目流程" class="headerlink" title="增删改项目流程"></a>增删改项目流程</h3><section style="font-size:18px;color:#aaadb1;text-align:center;margin:0 0 20px 0;">原流程概览</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70991181-f35f1480-2101-11ea-8df9-d751fdf8b347.png" alt="增删改项目"></p>
-<section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<section class="question">问题</section>
 
 
 <ul>
@@ -200,14 +200,14 @@
 <p>实际情况：通常助理开完单之后，一般要等服务完成才结账，所以从下单到正式结账之间是有一段时间差的。期间顾客有可能变换服务和增加其它额外服务，发型师如果要添加或变更项目，按原有的流程会降低开单结账的效率，还增加商家的操作负荷和繁琐感。</p>
 </li>
 </ul>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70991152-e3473500-2101-11ea-8bb4-74529f2edcb3.png" alt="增删改项目流程优化"></p>
 <ul>
 <li>进入待支付订单进行结账时，如果要增删改项目，只需要在当前页面操作，减少中间不必要环节，不需要跳转和重新走流程。具体看下方的<a href="#待支付订单页">待支付订单</a></li>
 </ul>
-<h2 id="交互问题"><a href="#交互问题" class="headerlink" title="交互问题"></a>交互问题</h2><h3 id="收银主页"><a href="#收银主页" class="headerlink" title="收银主页"></a>收银主页</h3><section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<h2 id="交互问题"><a href="#交互问题" class="headerlink" title="交互问题"></a>交互问题</h2><h3 id="收银主页"><a href="#收银主页" class="headerlink" title="收银主页"></a>收银主页</h3><section class="question">问题</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70983237-5a290180-20f3-11ea-92b3-8a79447faa61.jpg" alt="键盘问题"></p>
@@ -223,7 +223,7 @@
 <p>收银主页既用大面积区域做会员搜索，又做功能聚合，虽然之前只有开单、疗程和充值，但后面也会把开卡、升级、还款、购买自定义疗程加上。</p>
 <p>其次是从页面上很难快速地看出上下这两块原来是存在关联，要先输入手机号再选择下面的功能，选择功能后是进入会员搜索，并不直接进入所选功能对应的页面。</p>
 <p>这种布局<strong>直观感觉</strong>上下两个区域的功能是独立的：上方是用来快捷搜索会员的入口，下方的功能是可以直接点击使用的。用户心理期望与实际没有达到一致，这会很容易让人迷惑，还增加使用时的认识负荷（特别是新手用户）。</p>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70984632-cc024a80-20f5-11ea-933f-78baa2172b74.png" alt="收银主页优化"></p>
@@ -240,7 +240,7 @@
 <p><br>  </p>
 <hr>
 <p><br></p>
-<h3 id="开单主页面"><a href="#开单主页面" class="headerlink" title="开单主页面"></a>开单主页面</h3><section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<h3 id="开单主页面"><a href="#开单主页面" class="headerlink" title="开单主页面"></a>开单主页面</h3><section class="question">问题</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70976038-1b407f00-20e6-11ea-97e3-4d6940d0a818.png" alt="开单主页问题"></p>
@@ -263,7 +263,7 @@
 <li><p>服务或商品开单过程中，无法给顾客充值或开卡，必须要退出返回主页，再重新搜索会员和选择充值或开卡的功能再操作，极大影响操作的便捷性。</p>
 </li>
 </ul>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px">优化</section>
+<section class="optimization">优化</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70976242-973ac700-20e6-11ea-88a5-6c4ac8590914.png" alt="开单主页优化"></p>
@@ -278,7 +278,7 @@
 <hr>
 <p><br></p>
 <h3 id="会员搜索"><a href="#会员搜索" class="headerlink" title="会员搜索"></a>会员搜索</h3><p><img src="https://user-images.githubusercontent.com/9880101/70990293-2ef8df00-2100-11ea-9dc4-52013b00c02b.png" alt="搜索会员优化"></p>
-<section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<section class="question">问题</section>
 
 
 <ul>
@@ -286,7 +286,7 @@
 <li>无搜索结果时，不能在当前结果页修改搜索关键字。</li>
 <li>容错性低，上面提到<a href="#收银主页">收银主页</a>的数字键盘输入出错的概率很高，如果输入错一个数字或者漏输入，就要返回主页重新输入，页面跳转带来的是操作的繁琐，以及给用户衍生挫败感。</li>
 </ul>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <ul>
@@ -297,7 +297,7 @@
 <hr>
 <p><br></p>
 <h3 id="待支付订单页"><a href="#待支付订单页" class="headerlink" title="待支付订单页"></a>待支付订单页</h3><p><img src="https://user-images.githubusercontent.com/9880101/70984846-256a7980-20f6-11ea-96e4-503672f23fa4.png" alt="待支付订单优化"></p>
-<section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<section class="question">问题</section>
 
 
 <p><strong>1.操作负荷大，视觉负荷大，基础交互不适合移动端</strong></p>
@@ -312,7 +312,7 @@
 <li><p>其次在当前这个页面如果要继续添加项目，是需要跳转到项目的添加页面，并且重新走一遍流程，具体查看上面的<a href="#增删改项目流程">增删改项目流程</a>。</p>
 </li>
 </ul>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <ul>
@@ -327,7 +327,7 @@
 <hr>
 <p><br></p>
 <h3 id="部分弹窗交互和设计问题"><a href="#部分弹窗交互和设计问题" class="headerlink" title="部分弹窗交互和设计问题"></a>部分弹窗交互和设计问题</h3><p>比较多的页面都存在这种问题，缺少对信息的设计，可以多考虑从信息的分组、适当隐藏，对空间结构进行优化设计，确保在移动端上的信息设计和交互简单合理。</p>
-<section style="text-align:center;border-bottom:1px solid #FCEDEC;color:#E54B45;padding:4px 8px 8px;font-weight:700;font-size:18px;">问题</section>
+<section class="question">问题</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70976693-5f804f00-20e7-11ea-823f-50a4ec50c80a.png" alt="选择员工 优惠-before"></p>
@@ -342,7 +342,7 @@
 <li><p>对于需要频繁切换的操作，过渡使用全屏弹窗设计，一整屏堆满密密麻麻的信息。</p>
 </li>
 </ul>
-<section style="text-align:center;border-bottom:1px solid #E9F6F1;color:#2BA876;padding:4px 8px 8px;font-weight:700;font-size:18px;">优化</section>
+<section class="optimization">优化</section>
 
 
 <p><img src="https://user-images.githubusercontent.com/9880101/70976549-192af000-20e7-11ea-884a-fb87f7bd9b42.png" alt="选择员工 优惠-after"></p>
@@ -360,6 +360,7 @@
 <p>每个服务步骤的员工数量超过9个，采用左右滑动浏览，不再直接平铺展示，节省屏幕高度空间。</p>
 </li>
 </ul>
+<p><br></p>
 <h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>在功能范围层面，移动端应该要<strong>求精不求全</strong>。精：一是指能够精准匹配大部分核心主要的业务，保证完整业务闭环和落地；二是用户体验和设计上的精细。不求全，主要原因是很难做到面面具到，如果要迎合客户说什么就做什么很容易会让这个功能型产品变得冗肿，不同的客户可能只使用其中一小部分功能。</p>
 <p>虽然原版本已经有了商品服务收银、充值、疗程销售这三个核心主要功能，但在店铺日常营业移动收银的场景下并不能很好的实现无纸化收银的完整闭环。下面的几个功能对于覆盖商家的日常使用有很大的需要，比如还款、购买自定义疗程套餐、结账方式支持推送收款、礼品卡等等。</p>
 <p>这次改版设计重点要考虑<strong>交互框架的拓展性和易用性</strong>，即在不需要大改的情况下，以迭代的方式把功能追加上去。</p>
@@ -406,9 +407,9 @@
 
   <footer class="f-cf">
     
-      <a href="/posts/2c0c1d0b/" class="link f-fl">
+      <a href="/posts/c7c61052/" class="link f-fl">
         <span class="arrow"> ←</span>
-        设计体系(草稿)
+        设计之于项目的价值
       </a>
     
     

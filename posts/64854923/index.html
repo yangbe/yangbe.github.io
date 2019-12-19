@@ -16,7 +16,7 @@
 <meta property="og:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://user-images.githubusercontent.com/9880101/70579896-e798bd00-1bec-11ea-8c4a-de24908f21df.png">
-<meta property="og:updated_time" content="2019-12-16T09:01:45.753Z">
+<meta property="og:updated_time" content="2019-12-19T03:01:06.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深浅模式设计">
 <meta name="twitter:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
@@ -115,12 +115,13 @@
 <p>同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设计不同的模式。</p>
 <p><strong>为什么做深色模式？</strong></p>
 <ul>
-<li><p>对比度</p>
+<li><p><strong>对比度</strong></p>
 <p>每个用户、每个商家显示器的显示质量不一样，在显示质量差的显示器上由于对浅灰度区域的颜色显示效果不好，浅灰色的背景肉眼所看到的是偏白色，缺少这部分的颜色的还原显示，界面上信息的可读性很差。</p>
 <p>恰巧这部分的颜色在整个设计中多用在背景、内容区块和分隔线等，用于设计信息之间的层级关系，影响了信息的展示和可阅读性。</p>
 <p>如果单纯把显示有问题的颜色加深加重，在显示质量好的显示器上，所改的颜色反而会显得过深，影响了整体的设计，这是一个很矛盾的问题。</p>
 </li>
-<li><p>A New Look  For A New Experience。在很多专业领域的产品里面，大多默认使用深色界面，因为在深色背景下信息可以处理得更突出，让人在使用的时候更专注，提升使用产品时的感官体验。</p>
+<li><p><strong>A New Look  For A New Experience</strong></p>
+<p>在很多专业领域的产品里面，大多默认使用深色界面，因为在深色背景下信息可以处理得更突出，让人在使用的时候更专注，提升使用产品时的感官体验。</p>
 </li>
 <li><p>在室内或暗光环境下，相对于浅色模式下的屏幕亮光，深色模式能够减少用户的视觉疲劳，也减少屏幕亮光对周围他人影响。</p>
 </li>
@@ -240,7 +241,7 @@ color-basic-1500: #121212,
 
 <h2 id="颜色作用域"><a href="#颜色作用域" class="headerlink" title="颜色作用域"></a>颜色作用域</h2><p>我们把每个模式下所拥有的<strong>颜色集</strong>称为<strong>作用域（Scope）</strong>，每个模式都会有自己的颜色作用域，用于处理模式之间切换的颜色集管理。</p>
 <p><span style="font-weight:900;">模式之间颜色处理的方式有两种：</span></p>
-<p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式1(建议)：设置一个默认模式（Default Mode – 例如浅色模式），另外，其它模式相对默认模式有<u>差异的部分单独定义</u>，作为该模式独有的颜色作用域，在模式切换时，这部分颜色集会有更高的优先级。对于某些没有被定义的颜色，会获取和复用默认模式的颜色作用域里对应部分。</p>
+<p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式1(建议)：设置一个默认模式（Default Mode – 例如浅色模式），另外，其它模式相对默认模式<strong>有差异的部分单独定义</strong>，作为该模式独有的颜色作用域，在模式切换时，这部分颜色集会有更高的优先级。对于某些没有被定义的颜色，会获取和复用默认模式的颜色作用域里对应部分。</p>
 
 <p style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">方式2：每种模式都单独设置颜色作用域，模式切换时，只读取自己的颜色作用域。</p>
 
@@ -257,7 +258,7 @@ color-basic-1500: #121212,
 </ul>
 <p><span style="color:#8c8c8c">  PS：这些是我们设计不同模式时，界面上需要改变的基础要素。不同的设计语言会有不一样的拆解内容，有些还会有纹理，比如iOS还有Material层 — 也就是我们常说的透明磨沙层。</span></p>
 <p>这一步可以让我们理解到颜色在界面上的使用范围，为接下来<strong><a href="#语义化颜色，动态改变色值">语义化颜色</a></strong>做准备。</p>
-<p>对于背景、描边、字体和投影，它们自身会有着不同的层级。我们常见的字体，这次设计了3 ~ 4种层级的深浅度，用在标题、正文、辅助等文字，因为做这种系统UI设计的大多数时候是在<u>处理信息的层级关系（hierarchy）</u>。拆解之后，我们可以单独定义每项基础要素及其不同层级的颜色，而且它们之间互不影响。</p>
+<p>对于背景、描边、字体和投影，它们自身会有着不同的层级。我们常见的字体，这次设计了3 ~ 4种层级的深浅度，用在标题、正文、辅助等文字，因为做这种系统UI设计的大多数时候是在处理信息的层级关系（hierarchy）。拆解之后，我们可以单独定义每项基础要素及其不同层级的颜色，而且它们之间互不影响。</p>
 <h2 id="语义化颜色，动态改变色值"><a href="#语义化颜色，动态改变色值" class="headerlink" title="语义化颜色，动态改变色值"></a>语义化颜色，动态改变色值</h2><p><img src="https://user-images.githubusercontent.com/9880101/70226576-0c73d700-178c-11ea-8f26-7da7ce3a8e87.png" alt="color_define_3"></p>
 <section style="font-size:15px;color:#8c8c8c;text-align:center;">语义化颜色</section>
 
@@ -373,11 +374,11 @@ color-basic-1500: #121212,
 <section style="font-size:15px;color:#8c8c8c;text-align:center;">部分通用状态</section>
 
 
-<h1 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h1><p>当上线后，需要调整设计，比如个性描边、字体、甚至背景颜色时，以前需要抓破头皮去想究竟还有哪些地方会受影响。</p>
-<p>现在只要把要改的部分直接改掉就可以。以字体为例，如果要把字体颜色加亮或加深，只需要单独把这部分的颜色集修改就可以了。</p>
+<h1 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h1><p>当上线后，如果需要调整设计，比如修改描边、字体、甚至背景颜色时，以前需要抓破头皮去想究竟还有哪些地方会受影响，现在只要把要改的部分直接改掉就可以。</p>
+<p>以字体为例，如果要把字体颜色加亮或加深，只需要单独把这部分的颜色集修改就可以了。</p>
 <p>因为它们都是单独的，而且可以看成是模块化，各基础要素在模式之间可以做到互不影响，在模式内也互不影响。</p>
 <p><img src="https://user-images.githubusercontent.com/9880101/70588120-b331fa80-1c06-11ea-9d6e-5a5497314864.png" alt="textMagic"></p>
-<section style="font-size:15px;color:#8c8c8c;text-align:center;">字体颜色替换方法</section></div>
+<section style="font-size:15px;color:#8c8c8c;text-align:center;">替换字体颜色示例</section></div>
       
     </div>
 
