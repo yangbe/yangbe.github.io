@@ -141,7 +141,7 @@ body {
     #nav {
       position: fixed;
       top: 0px;
-      box-shadow: 0 1px 2px 0 rgba(38, 38, 38, 0.06); } }
+      box-shadow: 0 1px 2px -1px rgba(38, 38, 38, 0.06); } }
 
 #footer {
   margin: 60px auto 30px;
