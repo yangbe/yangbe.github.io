@@ -27,12 +27,12 @@
 <meta property="og:site_name" content="Liu.Jiany">
 <meta property="og:description" content="背景概述 在客户进入公众号的时，每个人看到都是一样的菜单内容，实际上当他们进入时所看到的菜单并非一定是他们想要的。在公众号运营竞争压力越来越大，信息推广缺乏群体针对性的环境下，怎么吸引和维护客户粉丝，提供个性化体验是一个大问题。 个性化菜单恰好能解决这个问题。微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用，可以根据关注者的标签、性别、地区、系统语言等条件自动匹配显示不同的菜">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://user-images.githubusercontent.com/9880101/69068113-2c528d80-0a5f-11ea-8b67-6c5354e0af91.png">
-<meta property="og:updated_time" content="2019-12-21T16:29:36.310Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/wechatcover.png">
+<meta property="og:updated_time" content="2019-12-26T10:12:32.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于公众号个性化菜单的模型分析和思考">
 <meta name="twitter:description" content="背景概述 在客户进入公众号的时，每个人看到都是一样的菜单内容，实际上当他们进入时所看到的菜单并非一定是他们想要的。在公众号运营竞争压力越来越大，信息推广缺乏群体针对性的环境下，怎么吸引和维护客户粉丝，提供个性化体验是一个大问题。 个性化菜单恰好能解决这个问题。微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用，可以根据关注者的标签、性别、地区、系统语言等条件自动匹配显示不同的菜">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/9880101/69068113-2c528d80-0a5f-11ea-8b67-6c5354e0af91.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/wechatcover.png">
   
     <link rel="icon" href="/images/favicon.ico">
   
@@ -120,14 +120,14 @@
     window.addEventListener('resize', toc_show, false)
 
  </script>
-        <div class="post_cnt"> <h1 id="背景概述"><a href="#背景概述" class="headerlink" title="背景概述"></a>背景概述</h1><p><img src="https://user-images.githubusercontent.com/9880101/69002344-55bccd80-0928-11ea-90a3-84294db49ad7.png" alt="banner"></p>
+        <div class="post_cnt"> <h1 id="背景概述"><a href="#背景概述" class="headerlink" title="背景概述"></a>背景概述</h1><p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/banner.png" alt="banner"></p>
 <p>在客户进入公众号的时，每个人看到都是一样的菜单内容，实际上当他们进入时所看到的菜单并非一定是他们想要的。在公众号运营竞争压力越来越大，信息推广缺乏群体针对性的环境下，怎么吸引和维护客户粉丝，提供个性化体验是一个大问题。</p>
 <p>个性化菜单恰好能解决这个问题。微信公众号平台提供了<strong>个性化菜单</strong>的相关接口，第三方开发者可以直接调取使用，可以根据关注者的标签、性别、地区、系统语言等条件自动匹配显示不同的菜单，以达到每种类型的用户在进入公众号时能快速触达与他们相关的菜单。比如我是一位男生用户，显示的菜单与女生用户的会不一样。</p>
 <p>Jerry计划要在自家产品加上这个功能，在进行UI设计时，发现Jerry提供的原型设计思路（即下面的方案A）在可用性和使用场景上存在一些欠妥的地方，大家双方对个性化菜单上也产生了不一样的理解，于是重新换了种思路设计了方案B再做沟通，因为没有实际方案直接说都是瞎扯蛋。</p>
 <h1 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h1><p>方案A和方案B，是基于对个性化菜单的两种不同的理解模型展开的，虽然在UI设计上可以把影响控制得比较小，但在产品功能的设计思路、后端底层数据存储和处理都是不一样的思路。</p>
 <p>方案A存在好几个问题，也正是这几个问题决定了这个方案不太可能继续往下走，主要是由于功能设计的拓展性差和对实际使用场景考虑的不周到。</p>
 <p>下面通过对两个方案的模型进行分析，我们来看看方案A和方案B的差异和优缺点，方案B除了能满足产品目标，还弥补了方案A的问题。</p>
-<h2 id="方案A"><a href="#方案A" class="headerlink" title="方案A"></a>方案A</h2><p><img src="https://user-images.githubusercontent.com/9880101/67074859-8a6c2680-f1bc-11e9-95a4-c5925a154ba6.png" alt="Modal1"></p>
+<h2 id="方案A"><a href="#方案A" class="headerlink" title="方案A"></a>方案A</h2><p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/modal1.png" alt="modal1"></p>
 <p><strong>模型：</strong></p>
 <p>个性化菜单，是一项独立的<strong>主菜单</strong>（如图中菜单3、菜单2…所示），匹配替换的时候是以默认菜单为基础，从左起第一项主菜单开始逐项替换。</p>
 <p><strong>替换规则：</strong></p>
@@ -157,7 +157,7 @@
 <blockquote>
 <p>针对方案A存在问题，重新设计了另一个方案，即下面的方案B</p>
 </blockquote>
-<h2 id="方案B"><a href="#方案B" class="headerlink" title="方案B"></a>方案B</h2><p><img src="https://user-images.githubusercontent.com/9880101/67074655-20538180-f1bc-11e9-88eb-c4d7c7fde27b.png" alt="modal2"></p>
+<h2 id="方案B"><a href="#方案B" class="headerlink" title="方案B"></a>方案B</h2><p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/modal2.png" alt="modal2"></p>
 <p><strong>模型：</strong></p>
 <p>个性化菜单，是一整个<strong>菜单按钮组</strong>（如图中m1、m2、m3…mn所示），每一组个性化菜单里的菜单按钮（如菜单a1）可以设置子菜单，与默认菜单一样。</p>
 <p><strong>替换规则：</strong></p>
@@ -221,7 +221,7 @@
 <p>在阅读了官方文档后，为什么Jerry设计的方案会变得不一样，还隐藏着漏洞？</p>
 </blockquote>
 <p><strong>1. 对个性化菜单的模型理解相对较浅</strong></p>
-<p><img src="https://user-images.githubusercontent.com/9880101/67075824-84774500-f1be-11e9-9dc6-32843d1450d2.jpg" alt="error_defualtmenu" style="zoom:100%;"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/error_defualtmenu.jpg" alt="error_defualtmenu" style="zoom:100%;"></p>
 <p>把个性化菜单理解成一个主菜单按钮，<strong>一项个性化菜单</strong>  等同时于  <strong>一项菜单按钮</strong>。（上图所示）</p>
 <p>虽然直觉上就是把默认菜单的某一项或几项替换掉，但这种理解还是相对较浅。如果简单地把这种模型理解作为规律直接应用到这项功能的设计上，正如上面分析方案问题所说的，最终方案只会变得局限和不适合。</p>
 <p><strong>2. 缺少对其它使用场景的考虑，没有预判当前方案设计可能会出现的问题</strong></p>
@@ -262,7 +262,8 @@
 <p>在B端的产品设计里，有很多的功能需要业务数据建模，比如账号体系、权限(RBAC相关的模型)，还有上面提到的公众号个性化菜单。在进入产品细节方案设计的时候，我们都会经常忽略基本的业务数据建模，直接着手每个页面的具体功能和交互设计，因为基础的底层数据关系没有梳理清楚，导至最后陷入了痛苦的混乱逻辑当中，我们的方案A就是典行没有做好数据建模。理想的做法是，<strong>先进行业务数据建模，然后再梳理流程和确认页面如何流转，最后才是每个页面的细节设计</strong>。</p>
 <p>做数据建模还有一个好处是<strong>团队成员对业务功能的理解比较容易达成一致共识</strong>。当我们在设计或者描述一个业务功能的时候，不同的人大脑里对它的理解经常会不一样，有时甚至是截然相反的想法。出现这一点的原因是我们每个人大脑对业务功能的解析不一样，通过借助一些建模工具，比如<a href="https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/what-is-uml/" target="_blank" rel="noopener">建模语言UML</a>、<a href="https://www.visual-paradigm.com/cn/guide/data-modeling/what-is-entity-relationship-diagram/" target="_blank" rel="noopener">ER图</a>，可以让自己梳理清晰流程、对象的关系和状态。模型是非常客观的，其他人在理解上不会容易出现理解偏移。</p>
 <p>下面两个类图分别是方案A和方案B中默认菜单与个性化菜单之间的关系模型。我们也能通过这些模型去分析方案自身的做给缺点，也有助于其它对接人员比如开发人员查看和理解。</p>
-<p><img src="https://user-images.githubusercontent.com/9880101/67174422-8cb8c580-f3f4-11e9-9201-db5480324e35.png" alt="方案AB"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/方案A.png" alt="方案A"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/方案B.png" alt="方案B"></p>
 <h2 id="演推和预判"><a href="#演推和预判" class="headerlink" title="演推和预判"></a>演推和预判</h2><p>演推和预判，是自己检验设计方案、发现问题的一种好方法</p>
 <p>使用场景是否能满足</p>
 <p>流程是否完整闭环</p>
