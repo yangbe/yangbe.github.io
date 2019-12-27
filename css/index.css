@@ -234,7 +234,7 @@ body {
         opacity: 1;
         color: #5694f1; }
     .project-card > .ctnWrap .title::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .project-card > .ctnWrap > .desc {
       font-size: 16px;
@@ -244,14 +244,14 @@ body {
       color: #4c6073;
       letter-spacing: 0.04rem; }
     .project-card > .ctnWrap .desc::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .project-card > .ctnWrap > .sub {
       font-size: 16px;
       line-height: 30px;
       color: #aaadb1; }
     .project-card > .ctnWrap .sub::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
   .project-card.project-card-continuous {
     flex-direction: row-reverse;
@@ -291,7 +291,7 @@ body {
         height: 100%; } }
 
 a::selection {
-  background: #233546;
+  background: #16202b;
   color: #ffffff; }
 
 .article {
@@ -312,7 +312,7 @@ a::selection {
       .article > .title {
         text-align: left; } }
   .article .title::selection {
-    background: #233546;
+    background: #16202b;
     color: #ffffff; }
   .article > .sub {
     color: #aaadb1;
@@ -322,7 +322,7 @@ a::selection {
       .article > .sub {
         text-align: left; } }
   .article .sub::selection {
-    background: #233546;
+    background: #16202b;
     color: #ffffff; }
   .article > .content {
     padding-bottom: 64px; }
@@ -334,7 +334,7 @@ a::selection {
       margin-top: 40px;
       border-bottom: 1px solid #e4e7eb; }
     .article > .content h1::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content h2 {
       font-size: 24px;
@@ -343,7 +343,7 @@ a::selection {
       margin-bottom: 15px;
       margin-top: 40px; }
     .article > .content h2::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content h3 {
       font-size: 18px;
@@ -352,7 +352,7 @@ a::selection {
       margin-bottom: 15px;
       margin-top: 20px; }
     .article > .content h3::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content h4 {
       font-size: 16px;
@@ -361,7 +361,7 @@ a::selection {
       margin-bottom: 15px;
       margin-top: 20px; }
     .article > .content h4::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content h5 {
       font-size: 14px;
@@ -370,7 +370,7 @@ a::selection {
       margin-bottom: 15px;
       margin-top: 20px; }
     .article > .content h5::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content p {
       font-size: 16px;
@@ -378,10 +378,10 @@ a::selection {
       margin-bottom: 14px;
       letter-spacing: 0.06rem; }
     .article > .content p::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content P > span::selection, .article > .content u::selection, .article > .content code::selection, .article > .content em::selection, .article > .content strong::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content p > code {
       text-align: center;
@@ -392,7 +392,7 @@ a::selection {
       border-radius: 3px;
       letter-spacing: 0.03rem; }
     .article > .content section::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content img {
       padding: 0;
@@ -400,7 +400,7 @@ a::selection {
     .article > .content a {
       color: #5694f1; }
     .article > .content a::selection {
-      background: #233546;
+      background: #16202b;
       color: #ffffff; }
     .article > .content section {
       margin-bottom: 16px; }
@@ -486,7 +486,7 @@ table {
     table tr:hover, table td:hover {
       background-color: #F9Fafc; }
   table th::selection, table tr::selection, table td::selection {
-    background: #233546;
+    background: #16202b;
     color: #ffffff; }
 
 table td:nth-child(1) {
@@ -505,7 +505,7 @@ table td:nth-child(1) {
 .post_cnt ul::selection,
 .post_cnt ol::selection,
 .post_cnt li::selection {
-  background: #233546;
+  background: #16202b;
   color: #ffffff; }
 
 .post_cnt ul, .post_cnt ol {
