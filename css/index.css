@@ -752,8 +752,7 @@ table td:nth-child(1) {
   z-index: 101;
   width: 36px;
   height: 36px;
-  border: 1px solid #f0f0f0;
-  background-color: #ffffff;
+  background-color: #16202b;
   text-align: center;
   position: fixed;
   right: -1px;
@@ -773,7 +772,7 @@ table td:nth-child(1) {
   .toc_icn span {
     position: absolute;
     display: block;
-    background-color: #2C77F4;
+    background-color: #FFFFFF;
     height: 2px;
     width: 36px;
     transition: all .25s ease-in-out; }
