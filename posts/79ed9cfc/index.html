@@ -46,7 +46,13 @@
     <div class="menu">
         
           
-              <a href="/" class="nav-menu ">⇠</a>
+              <a href="/" class="nav-menu ">主页</a>
+            
+          
+              <a href="/portfolio" class="nav-menu ">作品</a>
+            
+          
+              <a href="/about" class="nav-menu ">关于</a>
             
           
         
@@ -84,8 +90,9 @@
     var icn = document.getElementsByClassName('toc_icn');
     var line = document.getElementsByTagName('span');
     
-    var key = false;  // key作为控制toc开关状态的关联，<1280px时，toc的默认隐藏，等价于toc的display默认为“none”
+    var key = false;  // key作为映射toc开关状态的关联，<1280px时，toc的默认隐藏，等价于toc的display默认为“none”
 
+    //控制toc的出现或隐藏
     function switch_toc() {
         if(!key) {
             toc.style.display = "block";
@@ -96,6 +103,7 @@
         }  
     }
 
+    //目录icn的状态，每点击一次就切换，默认为css设置的状态
     function toc_icn_state() {
         for(let i=0; i < line.length; i++){
             line[i].classList.toggle('op');
@@ -106,7 +114,7 @@
 
     triggle[0].addEventListener('click', toc_icn_state, false);
 
-    // >1280px,处理窗口改变大小时，强制让toc出现； 对应的key也为true，开关变为x，css控制其隐藏
+    // >1280px,处理窗口改变大小时，强制让toc出现； 对应key的控制值改为true，开关变为x，css控制其隐藏
     function toc_show(){
         if((document.body.clientWidth+15) > 1279) {
             toc.style.display = "block";
@@ -414,7 +422,6 @@
 </div>
       
     </div>
-
   </article> 
 
   <footer class="f-cf">
