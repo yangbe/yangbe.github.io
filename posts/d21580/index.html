@@ -103,20 +103,19 @@
 <script type="text/javascript">
     var triggle = document.getElementsByClassName('mini_toc');
     var toc = document.getElementById('toc');
-    var icn = document.getElementsByClassName('toc_icn');
-    var line = document.getElementsByTagName('span');
+    var line = document.querySelectorAll('.toc_icn span');
     
-    var key = false;  // key作为映射toc开关状态的关联，<1280px时，toc的默认隐藏，等价于toc的display默认为“none”
+    var key = false;  // 映射toc的显示和隐藏，false == toc隐藏
 
     //控制toc的出现或隐藏
     function switch_toc() {
         if(!key) {
             toc.style.display = "block";
-            key = true;  
+            key = true;
         }else {
             toc.style.display = "none";
             key = false;
-        }  
+        } 
     }
 
     //目录icn的状态，每点击一次就切换，默认为css设置的状态
@@ -130,7 +129,7 @@
 
     triggle[0].addEventListener('click', toc_icn_state, false);
 
-    // >1280px,处理窗口改变大小时，强制让toc出现； 对应key的控制值改为true，开关变为x，css控制其隐藏
+    // >1280px,处理窗口改变大小时，强制让toc出现； 开关变为x，className控制开关隐藏
     function toc_show(){
         if((document.body.clientWidth+15) > 1279) {
             toc.style.display = "block";
@@ -416,6 +415,11 @@
   </article> 
 
   <footer class="f-cf">
+    
+      <a href="/posts/fddef8f1/" class="link f-fl">
+        <span class="arrow"> ←</span>
+        toc_test
+      </a>
     
     
       <a href="/posts/64854923/" class="link f-fr">
