@@ -639,7 +639,6 @@ table td:nth-child(1) {
     flex: 1;
     flex-wrap: wrap; }
   .pflo li {
-    margin: auto;
     position: relative;
     z-index: 0;
     box-sizing: border-box;
