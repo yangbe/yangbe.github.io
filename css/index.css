@@ -25,6 +25,26 @@ hr {
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection,
+a::selection,
+section::selection {
+  background: #19162b;
+  color: #ffffff; }
+
+P > span::selection, u::selection, code::selection, em::selection, strong::selection {
+  background: #19162b;
+  color: #ffffff; }
+
+.title::selection,
+.sub::selection {
+  background: #19162b;
+  color: #ffffff; }
+
 @font-face {
   font-family: 'iconfont';
   /* project id 1136188 */
@@ -289,10 +309,6 @@ body {
         width: 100%;
         height: 100%; } }
 
-a::selection {
-  background: #16202b;
-  color: #ffffff; }
-
 .article {
   margin: 128px 0 80px;
   padding: 0px 0px 0;
@@ -310,9 +326,6 @@ a::selection {
     @media screen and (max-width: 600px) {
       .article > .title {
         text-align: left; } }
-  .article .title::selection {
-    background: #19162b;
-    color: #ffffff; }
   .article > .sub {
     color: #aaadb1;
     margin-bottom: 40px;
@@ -320,9 +333,6 @@ a::selection {
     @media screen and (max-width: 600px) {
       .article > .sub {
         text-align: left; } }
-  .article .sub::selection {
-    background: #19162b;
-    color: #ffffff; }
   .article > .content {
     padding-bottom: 64px; }
     .article > .content h1 {
@@ -332,56 +342,35 @@ a::selection {
       margin-bottom: 15px;
       margin-top: 40px;
       border-bottom: 1px solid #e4e7eb; }
-    .article > .content h1::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content h2 {
       font-size: 24px;
       font-weight: 600;
       line-height: 44px;
       margin-bottom: 15px;
       margin-top: 40px; }
-    .article > .content h2::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content h3 {
       font-size: 18px;
       font-weight: 600;
       line-height: 36px;
       margin-bottom: 15px;
       margin-top: 20px; }
-    .article > .content h3::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content h4 {
       font-size: 16px;
       font-weight: 600;
       line-height: 28px;
       margin-bottom: 15px;
       margin-top: 20px; }
-    .article > .content h4::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content h5 {
       font-size: 14px;
       font-weight: 600;
       line-height: 24px;
       margin-bottom: 15px;
       margin-top: 20px; }
-    .article > .content h5::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content p {
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 14px;
       letter-spacing: 0.06rem; }
-    .article > .content p::selection {
-      background: #19162b;
-      color: #ffffff; }
-    .article > .content P > span::selection, .article > .content u::selection, .article > .content code::selection, .article > .content em::selection, .article > .content strong::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content p > code {
       text-align: center;
       padding: 4px 6px;
@@ -390,17 +379,11 @@ a::selection {
       background-color: #ebf3f1;
       border-radius: 3px;
       letter-spacing: 0.03rem; }
-    .article > .content section::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content img {
       padding: 0;
       margin: 10px 0 0 0; }
     .article > .content a {
       color: #5694f1; }
-    .article > .content a::selection {
-      background: #19162b;
-      color: #ffffff; }
     .article > .content section {
       margin-bottom: 16px; }
     .article > .content strong {

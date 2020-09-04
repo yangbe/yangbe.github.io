@@ -9,3 +9,23 @@ hr {
 
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection,
+a::selection,
+section::selection {
+  background: #19162b;
+  color: #ffffff; }
+
+P > span::selection, u::selection, code::selection, em::selection, strong::selection {
+  background: #19162b;
+  color: #ffffff; }
+
+.title::selection,
+.sub::selection {
+  background: #19162b;
+  color: #ffffff; }
