@@ -33,7 +33,7 @@ a {
     color: #5694f1; }
 
 hr {
-  border: 1px solid #e4e7e8; }
+  border: 1px solid #f5f5f5; }
 
 body {
   font-family: -apple-system, system-ui, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif; }
@@ -57,6 +57,16 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
 .sub::selection {
   background: #19162b;
   color: #ffffff; }
+
+.label-a {
+  display: inline-block;
+  color: #1DBF71;
+  background: #effaf5;
+  padding: 2px 10px;
+  margin: 0 4px 6px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  word-break: normal; }
 
 @font-face {
   font-family: 'iconfont';
@@ -285,36 +295,12 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
     .project-card > .ctnWrap .sub::selection {
       background: #16202b;
       color: #ffffff; }
-  .project-card.project-card-continuous {
-    flex-direction: row-reverse;
-    margin: 0;
-    position: relative; }
-    .project-card.project-card-continuous > .imgWrap {
-      margin-right: 0;
-      margin-left: 40px; }
-    .project-card.project-card-continuous::after {
-      content: '';
-      position: absolute;
-      left: 100px;
-      right: 100px;
-      bottom: 0;
-      height: 1px;
-      background-color: #e5e5e5; }
-    @media screen and (max-width: 600px) {
-      .project-card.project-card-continuous {
-        flex-direction: column;
-        padding: 20px; }
-        .project-card.project-card-continuous > .imgWrap {
-          margin-left: 0;
-          margin-bottom: 20px; }
-        .project-card.project-card-continuous::after {
-          left: 20px;
-          right: 20px; } }
   @media screen and (max-width: 600px) {
     .project-card {
       flex-direction: column;
       padding: 40px 10px;
-      margin: 10px 0; }
+      margin: 10px 0;
+      align-items: flex-start; }
       .project-card > .imgWrap {
         margin-left: 0;
         margin-right: 0;
@@ -328,7 +314,7 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
   padding: 0px;
   background-color: white;
   color: #35495D;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 30px; }
   .article > .title {
@@ -381,10 +367,9 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
       margin-bottom: 15px;
       margin-top: 20px; }
     .article > .content p {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 30px;
-      margin-bottom: 14px;
-      letter-spacing: 0.06rem; }
+      margin-bottom: 14px; }
     .article > .content p > code {
       text-align: center;
       padding: 4px 6px;
@@ -438,7 +423,7 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
       padding: 4px;
       margin: 6px 3px 0 0; }
     .article > footer .link {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 22px;
       max-width: 50%;
       text-overflow: clip; }
@@ -534,6 +519,48 @@ table td:nth-child(1) {
       border: 1px solid #444;
       background-color: rgba(243, 243, 243, 0); }
 
+.card-content {
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 600px) {
+    .card-content {
+      flex-direction: column; } }
+
+.card-link {
+  width: 25%;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 12px; }
+  .card-link:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    color: #5694f1; }
+  @media screen and (max-width: 600px) {
+    .card-link {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .card-link > .card-img {
+        max-width: 28%;
+        min-width: 80px; } }
+
+.card-content .card-link img {
+  margin: 0;
+  border-radius: 6px; }
+
+.card-content .card-link .card-title {
+  font-size: 14px;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 22px; }
+  @media screen and (max-width: 600px) {
+    .card-content .card-link .card-title {
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0; } }
+
 .about {
   background-color: white;
   min-height: 300px;
@@ -582,9 +609,8 @@ table td:nth-child(1) {
     .about .table-info th, .about .table-info td {
       text-align: left;
       border-top: 1px solid #f2f4f7;
-      padding: 7px 14px 7px 0;
+      padding: 24px 14px 24px 0;
       color: #46515C;
-      line-height: 60px;
       background-color: #ffffff; }
     .about .table-info th {
       font-size: 13px;
