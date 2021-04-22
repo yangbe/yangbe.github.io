@@ -14,7 +14,7 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-    
+  <script src="//at.alicdn.com/t/font_1136188_l3kprhff3hi.js"></script>
 
   <title>公众号个性化菜单的模型抽象化和分析 · YAY ART</title>
   <!-- <title>公众号个性化菜单的模型抽象化和分析</title> -->
@@ -28,7 +28,7 @@
 <meta property="og:description" content="背景概述 在客户进入公众号的时，每个人看到都是一样的菜单内容，实际上当他们进入时所看到的菜单并非一定是他们想要的。在公众号运营竞争压力越来越大，信息推广缺乏群体针对性的环境下，怎么吸引和维护客户粉丝，提供个性化体验是一个大问题。 个性化菜单恰好能解决这个问题。微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用，可以根据关注者的标签、性别、地区、系统语言等条件自动匹配显示不同的菜">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/personalizedMenu/cover.png">
-<meta property="og:updated_time" content="2020-03-23T09:55:24.000Z">
+<meta property="og:updated_time" content="2021-04-19T12:46:07.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="公众号个性化菜单的模型抽象化和分析">
 <meta name="twitter:description" content="背景概述 在客户进入公众号的时，每个人看到都是一样的菜单内容，实际上当他们进入时所看到的菜单并非一定是他们想要的。在公众号运营竞争压力越来越大，信息推广缺乏群体针对性的环境下，怎么吸引和维护客户粉丝，提供个性化体验是一个大问题。 个性化菜单恰好能解决这个问题。微信公众号平台提供了个性化菜单的相关接口，第三方开发者可以直接调取使用，可以根据关注者的标签、性别、地区、系统语言等条件自动匹配显示不同的菜">
@@ -83,7 +83,7 @@
         
 
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#背景概述"><span class="toc-text">背景概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方案"><span class="toc-text">方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方案A"><span class="toc-text">方案A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案B"><span class="toc-text">方案B</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证"><span class="toc-text">验证</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题回归"><span class="toc-text">问题回归</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#思考和启发"><span class="toc-text">思考和启发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一性原理"><span class="toc-text">第一性原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象化功能，总结规律和模式"><span class="toc-text">抽象化功能，总结规律和模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优先业务数据建模"><span class="toc-text">优先业务数据建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#演推和预判"><span class="toc-text">演推和预判</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#背景概述"><span class="toc-text">背景概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方案"><span class="toc-text">方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方案A"><span class="toc-text">方案A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案B"><span class="toc-text">方案B</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证"><span class="toc-text">验证</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题回归"><span class="toc-text">问题回归</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#思考和启发"><span class="toc-text">思考和启发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象化功能，总结规律和模式"><span class="toc-text">抽象化功能，总结规律和模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优先业务数据建模"><span class="toc-text">优先业务数据建模</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#演推和预判"><span class="toc-text">演推和预判</span></a></li></ol></li></ol>
     </div>
 
 
@@ -251,10 +251,6 @@
 <blockquote>
 <p>在设计阶段（产品、交互、UI），怎样避免少一点坑呢？</p>
 </blockquote>
-<h2 id="第一性原理"><a href="#第一性原理" class="headerlink" title="第一性原理"></a>第一性原理</h2><p>第一性原理强调不要将思维锁定在表面的问题上，更需要做的是回到问题的出发点，有时候更甚至于要重新定义问题。</p>
-<p>相信Jerry在设计方案A的时候，是简单地把个化性菜单看成在已有的默认菜单上每一项进行自定义替换，方案A中的问题，离不开产品的思维停留在对个性化菜单的浅层理解。</p>
-<p>要遵循已有的业务功能的描述，但不能盲从，换个思考角度来看待需求，换种方法去处理，也许会找到更简单更巧妙的方法、更优的解，能满足更多的场景使用需要。</p>
-<p>很多时候，设计的方案不一定是适合的，有时也会出错出漏洞，如果都不分对错只顾执行，相当于把错的东西换种方式重复再做一遍，继续错下去，于谁也不会有好处。这种时候更应该回归到实际问题上，用辩证的思维去看待分析，寻找是否还能有更好的方案，简单一句话：多想一下为什么，多尝试是否还有更好的方案。</p>
 <h2 id="抽象化功能，总结规律和模式"><a href="#抽象化功能，总结规律和模式" class="headerlink" title="抽象化功能，总结规律和模式"></a>抽象化功能，总结规律和模式</h2><blockquote>
 <p>思想、概念都是无形的，都是抽象的。我们在向别人介绍某一种事物时，事物本身可能是具体的，但当我们用语言、文字向他人描述时，实际上你描述的已成为经你抽象后的“另一事物”，这需要让受众与他经验中的具体的事物相联系，在受众的头脑中将你传递给他的信息重新组合、拼装成具体的事物，才能给受众形象的印象，否则别人不懂。[^百度百科]</p>
 </blockquote>
@@ -309,20 +305,3 @@
 </script></div>
   </div>
 </body>
-
-<footer id="footer" class="f-cf">
-  <div class="icons">
-      
-        
-          
-            <a href="https://www.behance.net/idiotyang" target="_blank" class="nav-icn iconfont icon-behance"></a>
-          
-        
-          
-            <a href="https://github.com/yangbe" target="_blank" class="nav-icn iconfont icon-github"></a>
-          
-        
-      
-    </div>
-  <a href="mailto:jiany.liu@qq.com" class="email" >JIANY.LIU @ QQ.COM</a>
-</footer>

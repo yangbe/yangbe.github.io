@@ -4,6 +4,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   vertical-align: 0; }
 
+img {
+  pointer-events: none; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -31,16 +34,16 @@ h5::selection,
 p::selection,
 a::selection,
 section::selection {
-  background: #19162b;
+  background: #1d1d22;
   color: #ffffff; }
 
 P > span::selection, u::selection, code::selection, em::selection, strong::selection {
-  background: #19162b;
+  background: #1d1d22;
   color: #ffffff; }
 
 .title::selection,
 .sub::selection {
-  background: #19162b;
+  background: #1d1d22;
   color: #ffffff; }
 
 .label-a {
@@ -52,3 +55,10 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
   border-radius: 6px;
   font-size: 14px;
   word-break: normal; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }

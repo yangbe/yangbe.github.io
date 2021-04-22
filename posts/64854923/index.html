@@ -14,7 +14,7 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-    
+  <script src="//at.alicdn.com/t/font_1136188_l3kprhff3hi.js"></script>
 
   <title>深浅模式设计 · YAY ART</title>
   <!-- <title>深浅模式设计</title> -->
@@ -28,7 +28,7 @@
 <meta property="og:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/Modes/cover.png">
-<meta property="og:updated_time" content="2021-03-22T05:37:34.630Z">
+<meta property="og:updated_time" content="2021-04-20T13:22:00.456Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深浅模式设计">
 <meta name="twitter:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
@@ -130,7 +130,7 @@
     window.addEventListener('resize', toc_show, false)
 
  </script>
-        <div class="post_cnt"> <h1 id="关于模式"><a href="#关于模式" class="headerlink" title="关于模式"></a>关于模式</h1><iframe width="100%" height="440" src="//jsrun.net/bFWKp/embedded/all/dark" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <div class="post_cnt"> <h1 id="关于模式"><a href="#关于模式" class="headerlink" title="关于模式"></a>关于模式</h1><iframe width="100%" height="440" src="//jsrun.net/bFWKp/embedded/result/dark" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的<strong><u><a href="//jsrun.pro/bFWKp/embedded/all/dark">demo</a></u></strong>可以了解深浅两种模式在视觉上的感官区别。</p>
 <p>它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。</p>
@@ -206,7 +206,7 @@ color-basic-1500: #121212,
 </code></pre>
 <h1 id="重新思考颜色的使用"><a href="#重新思考颜色的使用" class="headerlink" title="重新思考颜色的使用"></a>重新思考颜色的使用</h1><p>有了上面这些颜色之后，如何使用它们将是一个关键问题，因为直接影响到我们如何设计深浅模式。</p>
 <p>下面先分析我们以前使用颜色的方法，在进行多模式设计时会出现哪些问题，针对这些问题，重新思考了颜色在整个设计中的使用方法，这将让我们换一个角度重新看待颜色在界面设计中的使用。</p>
-<section style="text-align:center; font-weight:900; color:#8C5200; border-bottom:1px solid #F0F0F0;padding:16px 0px; margin:40px 0px">~BEFORE~</section>
+<section class="caption-yellow">BEFORE</section>
 
 
 <p><strong>以前是这样使用颜色的：</strong></p>
@@ -241,6 +241,8 @@ color-basic-1500: #121212,
 <p>实例如下面两张图所示：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/Modes/color_define.png" alt="color_define"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/Modes/color_define_2.png" alt="color_define_2"></p>
+<label class="label-yellow">ABC</label>
+
 <p><strong>Yep！</strong>对于一个普通的APP或简单网页来说，这种方法是可行的。</p>
 <p>但对于有着数百个页面和交互状态的系统来说，我们在实际应用的时候，设计上会有下面两个严重的问题：</p>
 <ul>
@@ -251,8 +253,7 @@ color-basic-1500: #121212,
 <p>浅色模式下的字体颜色 <code>#262626</code> 对应着深色模式的 <code>#DBDBDB</code>，但 <code>#262626</code> 同时也用在背景，那它的使用范围与<code>#DBDBDB</code>其实只有部分有交集。在模式切换时，总会有一些界面元素的颜色对应不上。这种要让每个颜色的映射关系时找到最优解是很困难的，在设计深浅模式或者其它多模式时会让人十分挠脑。</p>
 </li>
 </ul>
-<section style="text-align:center; font-weight:900; color:#106369; border-bottom:1px solid #F0F0F0; padding:16px 0px; margin:40px 0px">~AND NOW~</section>
-
+<section class="caption-green">AND NOW</section>
 
 <p><strong>现在，对于颜色的使用，有不一样方法：</strong></p>
 <section style="background:#FAFAFA;color:#106369; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">1. 每种模式下可以设置不同的颜色集，互不影响。<br>2. 拆解界面设计语言，划分不同类型的基础要素（如字体、背景等），主要用于区分颜色的使用范围。<br>3. 语义化颜色，根据拆解的基础要素来命名颜色，并且作为变量使用。<br></section>
@@ -425,20 +426,3 @@ color-basic-1500: #121212,
 </script></div>
   </div>
 </body>
-
-<footer id="footer" class="f-cf">
-  <div class="icons">
-      
-        
-          
-            <a href="https://www.behance.net/idiotyang" target="_blank" class="nav-icn iconfont icon-behance"></a>
-          
-        
-          
-            <a href="https://github.com/yangbe" target="_blank" class="nav-icn iconfont icon-github"></a>
-          
-        
-      
-    </div>
-  <a href="mailto:jiany.liu@qq.com" class="email" >JIANY.LIU @ QQ.COM</a>
-</footer>
