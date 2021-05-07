@@ -3,6 +3,7 @@
 @import url(/themes/ayrton/source/css/global.scss);
 @import url(/themes/ayrton/source/css/global.scss);
 @import url(/themes/ayrton/source/css/global.scss);
+@import url(/themes/ayrton/source/css/global.scss);
 #container {
   max-width: 1024px;
   margin: 60px auto 75px;
@@ -398,7 +399,7 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
       background-color: #ebf3f1;
       border-radius: 3px;
       letter-spacing: 0.03rem; }
-    .article > .content img:not(.uxmp) {
+    .article > .content P > img {
       width: 100%;
       padding: 0;
       margin: 10px 0 0 0; }
@@ -550,6 +551,7 @@ table td:nth-child(1) {
 
 #card-img {
   display: block;
+  width: 100%;
   margin: 0;
   border-radius: 6px; }
   @media screen and (max-width: 600px) {
@@ -845,14 +847,29 @@ table td:nth-child(1) {
           font-size: 16px; } }
     .pflo .info p {
       margin: 4px 0;
-      font-size: 14px;
-      color: #647382; }
+      font-size: 13px;
+      color: #aaadb1; }
 
 .figure-mmfbook {
-  background: #fda488; }
+  background: #fd9c3e; }
 
 .figure-idata {
   background: #ffffff; }
+
+.figure-datacenter {
+  background: #fafafa; }
+
+.figure-mmf {
+  background: #52c7fd; }
+
+.figure-gongxiaomi {
+  background: #eee9dc; }
+
+.figure-mob {
+  background: #aee6fc; }
+
+.figure-mmf-guideline {
+  background: #f6f7f7; }
 
 #toc {
   z-index: 100;
