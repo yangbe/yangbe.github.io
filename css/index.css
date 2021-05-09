@@ -283,7 +283,8 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
     cursor: pointer; }
     .project-card > .imgWrap > img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-radius: 10px; }
       .project-card > .imgWrap > img:hover {
         opacity: 0.85; }
   .project-card > .ctnWrap {
@@ -663,26 +664,26 @@ table td:nth-child(1) {
       text-align: center; } }
 
 .question {
+  display: inline-block;
   background: rgba(255, 243, 190, 0.25);
   color: #bd8708;
   padding: 4px 12px;
   font-size: 16px;
   border-radius: 8px;
   text-align: center;
-  width: 80px;
   margin: 32px 0 12px 0; }
   @media screen and (max-width: 600px) {
     .question {
       margin: 32px auto 12px auto; } }
 
 .optimization {
+  display: inline-block;
   background: rgba(43, 168, 118, 0.08);
   color: #178483;
   padding: 4px 12px;
   font-size: 16px;
   border-radius: 8px;
   text-align: center;
-  width: 80px;
   margin: 32px 0 12px 0; }
   @media screen and (max-width: 600px) {
     .optimization {
