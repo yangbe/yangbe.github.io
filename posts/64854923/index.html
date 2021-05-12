@@ -30,7 +30,7 @@
 <meta property="og:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/Modes/cover.png">
-<meta property="og:updated_time" content="2021-04-20T13:22:00.456Z">
+<meta property="og:updated_time" content="2021-05-12T13:47:18.757Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深浅模式设计">
 <meta name="twitter:description" content="关于模式  这里所说的模式，可以理解我们肉眼看到的界面外观。点击上面的demo可以了解深浅两种模式在视觉上的感官区别。 它们有着相同的布局、相同的文字内容、相同的icon，还有其它相同的元素。仅仅除了颜色，它们所有的属性和操作其实都是一样的。 同样，在我们整个系统的设计中，深色模式与浅色模式实际上是一样的，在不改变任何布局、任何功能和内容的前提下，通过改变颜色（当然还会有其它的一些元素和属性）来设">
@@ -232,10 +232,6 @@ color-basic-1500: #121212,
 <td style="text-align:left">……</td>
 <td style="text-align:left">……</td>
 </tr>
-<tr>
-<td style="text-align:left">……</td>
-<td style="text-align:left">……</td>
-</tr>
 </tbody>
 </table>
 <section style="background:#FAFAFA;color:#8C5200; padding:10px 18px;margin:20px 0 20px 0px; line-height:32px; font-size:15px">1. 定义有哪些颜色色值 <br> 2. 备注这些颜色分别是用在什么地方，在界面元素上直接指明用的是什么色值。<br></section>
@@ -352,6 +348,9 @@ color-basic-1500: #121212,
 <p>在界面设计中，有一些已经相当普适化的基本状态（参考下面的表格）。</p>
 <p><code>Normal</code>  <code>Disabled</code>  <code>Hover</code>  <code>Focus</code>  <code>Selected</code>  <code>Activated</code>  <code>Pressed</code>  <code>Dragged</code>  这几个基本状态，一般应用在按钮、输入框、下拉菜单等组件上面，并不是所有组件都会有这些状态，对于不同组件的状态一般都可以单独设计。</p>
 <p>关于状态远不止这些，还有很多涉及到业务流程上的状态变化，它们对应到界面设计上也会有状态变化，比如订单流程从下单到成功交易或取消交易，订单是有不同的状态流转，通常这部分是最容易被设计忽略。</p>
+
+<div class="table-container">
+
 <table>
 <thead>
 <tr>
@@ -394,6 +393,9 @@ color-basic-1500: #121212,
 </tr>
 </tbody>
 </table>
+
+</div>
+
 <p>下图是定义了通用的Hover、Disabled的状态所关联到的描边和背景填充颜色。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/Modes/States.png" alt="States"></p>
 <section style="font-size:15px;color:#8c8c8c;text-align:center;">部分通用状态</section>
