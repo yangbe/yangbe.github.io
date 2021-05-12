@@ -422,7 +422,7 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
       .article > .content pre span::selection {
         background: #178483; }
     .article > .content blockquote {
-      padding: 15px 0 15px 0;
+      padding: 12px 0 12px 0;
       color: #466994;
       border-left: 4px solid #68a4ff;
       padding: 12px 12px;
@@ -431,6 +431,18 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
       .article > .content blockquote > p {
         font-size: 14px; }
       .article > .content blockquote > :last-child {
+        margin-bottom: 0; }
+    .article > .content .blockquote-gray {
+      padding: 12px 0 12px 0;
+      color: #6c6c6c;
+      border-left: 4px solid #e4e7eb;
+      padding: 12px 12px;
+      margin: 15px 0 15px 0;
+      background-color: #f9f9f9; }
+      .article > .content .blockquote-gray > p {
+        font-size: 14px;
+        margin-bottom: 4px; }
+      .article > .content .blockquote-gray > :last-child {
         margin-bottom: 0; }
   .article > footer {
     padding: 40px 0;
@@ -871,6 +883,9 @@ table td:nth-child(1) {
 
 .figure-mmf-guideline {
   background: #f6f7f7; }
+
+.figure-mmfbook-pages {
+  background: #faf9f5; }
 
 #toc {
   z-index: 100;
