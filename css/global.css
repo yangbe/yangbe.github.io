@@ -48,6 +48,7 @@ P > span::selection, u::selection, code::selection, em::selection, strong::selec
   background: #1d1d22;
   color: #ffffff; }
 
+.label-yellow::selection,
 .title::selection,
 .sub::selection {
   background: #1d1d22;
