@@ -30,7 +30,7 @@
 <meta property="og:description" content="背景介绍伊智OA（顾问SaaS）是公司内部销售顾问、运营顾问、和管理人员使用的工具，主要用于在与客户谈合作时能快速拟定合同和完成签约，利用数字化手段提升业务端录入客户、签发合同的效率；其次是做客户资源管理（包括构建公海客户和线索跟踪等客资管理功能）、实时的量化数据管理。对内部来说是一个提升合同签约效率和客户信息管理维护的工具。 挑战🤯 时间紧迫  设计+研发，16个工作日 🤯 需求问题  1.">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/cover.png">
-<meta property="og:updated_time" content="2021-05-16T02:08:58.255Z">
+<meta property="og:updated_time" content="2021-05-30T13:45:32.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="顾问SaaS">
 <meta name="twitter:description" content="背景介绍伊智OA（顾问SaaS）是公司内部销售顾问、运营顾问、和管理人员使用的工具，主要用于在与客户谈合作时能快速拟定合同和完成签约，利用数字化手段提升业务端录入客户、签发合同的效率；其次是做客户资源管理（包括构建公海客户和线索跟踪等客资管理功能）、实时的量化数据管理。对内部来说是一个提升合同签约效率和客户信息管理维护的工具。 挑战🤯 时间紧迫  设计+研发，16个工作日 🤯 需求问题  1.">
@@ -158,15 +158,28 @@
 <p>现有的需求文档缺少关键流程和细节交互操作说明，如果直接设计，会预判到进入开发阶段会有很多问题。整理需求疑问点和，再拉着产品和开发逐点沟通，确定相关方案和让开发考虑实现可行性问题。</p>
 <p><br></p>
 <p><strong>明确业务模型</strong></p>
-<p>电子合同的完整功能交互，包括签约、续签、升单，都依赖于 <code>门店 - 合同类型 - 合同版本</code> 这三者的模型关系。为了让产品和开发明确了解清楚，以及保证整体交互和设计方案的完整性、可行性，对它们进行了简单的业务建模。</p>
+<p>电子合同的完整功能交互，包括签约、续签、升单，都依赖于 <code>门店 - 合同类型 - 合同版本</code> 这三者的模型关系。在没确定之前，基础的事件交互容易做得天马行空。为了让产品和开发明确了解清楚，以及保证整体交互和设计方案的完整性、可行性，对它们进行了简单的业务建模。</p>
+<p>合同签约有针对单店和连锁（包含主店和分店），这两者的在签约处理上会有差别。下面这个界面是门店签约的入口页面，可以选择签约哪种类型的合同，但在这之前我们需要解决几个关键问题，才能知道在具体签约合同时的交互要怎么做。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/key_problem.png" alt="key_problem"></p>
+<p>要回答这些问题 ，其实是先整理清楚<code>门店--合同类型--合同版本</code>三者之间的对应关系，下图所示</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/entity_shopcontract.png" alt="entity"></p>
-<section class="caption-image">解释门店、合同、版本之间的对应关系  |  <a href="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/contract_manage.png" target="_blank" rel="noopener">查看示例页面</a></section>
+<section class="caption-image">解释门店、合同、版本之间的对应关系</section>
 
+<p><br></p>
+<p>除了上面这个门店-合同类型-合同版本的关系问题，也存在其它方面不确定的问题，比如不同合同类型的计价方式，特别是连锁的主店或分店在签约时的价格计算方式；还有合同在续约、升单后的记录要怎么处理等。</p>
 <p><br></p>
 <p><strong>梳理流程</strong></p>
 <p>创建合同（首签、续签、升单）、合同管理、合同审批，这三者的流程在产品提供的文档都缺少清晰的描述，在沟通后，将这部分流程的需求重新转译为可实现的合理的方案，以及整理整条流程之间涉及到的干系人、操作和状态流转关系。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/process.svg" alt="process"></p>
-<section class="caption-image">创建合同-审批-签约流程图  |  <a href="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/process_part.png" target="_blank" rel="noopener">查看示例页面</a></section> 
+<section class="caption-image">创建合同-审批-签约流程图 </section> 
+
+<p><br></p>
+<p>下图是合同从创建到审批流程相关的部分页面</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yangbe/imagestorage@master/img/yizhioa/process_part.png" alt="process_part"></p>
+<section class="caption-image">创建合同、合同管理、审批合同的部分页面 </section> 
+
+
+
 
 
 <p><br></p>
