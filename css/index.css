@@ -930,10 +930,16 @@ table td:nth-child(1) {
   background: #faf9f5; }
 
 .figure-mmf-categoryicon {
-  background: #fdc578; }
+  background: #fcfaf2; }
 
 .figure-mmf-emptystate {
   background: #ebe8ec; }
+
+.figure-running {
+  background: #cee0f5; }
+
+.figure-motion-running {
+  background: #f8fbfc; }
 
 #toc {
   z-index: 100;
