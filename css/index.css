@@ -947,6 +947,9 @@ table td:nth-child(1) {
 .figure-motion-running {
   background: #f8fbfc; }
 
+.figure-dazhanggui {
+  background: #2764c8; }
+
 #toc {
   z-index: 100;
   position: fixed;
