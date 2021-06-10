@@ -799,13 +799,23 @@ table td:nth-child(1) {
   font-size: 15px;
   font-weight: 500;
   color: #46515C;
-  margin: 10px 0 8px 0; }
+  margin: 10px 0 0 0; }
+
+.span-company {
+  display: block;
+  font-size: 14px;
+  color: #46515C;
+  line-height: 28px;
+  margin: 0 0 8px 0; }
 
 .span-desc {
   display: block;
   font-size: 14px;
   color: #6c6c6c;
   line-height: 28px; }
+
+.span-line {
+  color: #eef1f3; }
 
 .span-desc-multiline {
   display: block;
@@ -823,6 +833,10 @@ table td:nth-child(1) {
   border-radius: 6px;
   font-size: 14px;
   word-break: normal; }
+
+.adv {
+  list-style: none;
+  margin-bottom: 8px; }
 
 .pflo {
   margin-top: 100px; }
