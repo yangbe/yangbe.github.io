@@ -920,6 +920,19 @@ table td:nth-child(1) {
       font-size: 13px;
       color: #aaadb1; }
 
+.ui-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2020;
+  padding: 0 0 8px 16px;
+  margin-top: 16px; }
+
+.desc {
+  font-size: 14px;
+  color: #aaadb1;
+  padding-left: 16px;
+  margin-bottom: 14px; }
+
 .notice {
   text-align: center;
   background: #fff9e2;
