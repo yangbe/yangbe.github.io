@@ -855,11 +855,26 @@ table td:nth-child(1) {
   @media screen and (max-width: 600px) {
     .pflo {
       margin-top: 0px; } }
-  .pflo ul {
+  .pflo .design-category {
+    position: relative; }
+  .pflo .section-title {
+    display: block;
+    margin: 0 0 12px 0; }
+  .pflo .part-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2020;
+    padding: 0 0 8px 16px; }
+  .pflo .part-desc {
+    font-size: 14px;
+    color: #aaadb1;
+    padding-left: 16px; }
+  .pflo .ui-design {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-gap: 16px; }
+    grid-gap: 16px;
+    margin-top: 24px; }
   .pflo li {
     position: relative;
     z-index: 0;
@@ -920,18 +935,63 @@ table td:nth-child(1) {
       font-size: 13px;
       color: #aaadb1; }
 
-.ui-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #1f2020;
-  padding: 0 0 8px 16px;
-  margin-top: 16px; }
-
-.desc {
-  font-size: 14px;
-  color: #aaadb1;
-  padding-left: 16px;
-  margin-bottom: 14px; }
+.int {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px; }
+  .int li {
+    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 0; }
+  .int .cont-int {
+    background: #FFFFFF;
+    border-radius: 2px;
+    border-bottom: 1px solid #f2f4f7; }
+  .int .int-cardstyle {
+    position: relative;
+    width: 100%;
+    padding: 12px 12px 24px 12px;
+    color: #333;
+    text-align: left; }
+    .int .int-cardstyle .int-desc {
+      padding-right: 6px; }
+      .int .int-cardstyle .int-desc a {
+        color: #5694f1; }
+        .int .int-cardstyle .int-desc a .int-label {
+          display: inline-block;
+          font-size: 13px;
+          text-align: center;
+          color: #6c6c6c;
+          background: #f3f5f8;
+          padding: 3px 6px;
+          margin: 12px 0 0;
+          border-radius: 6px;
+          cursor: pointer; }
+        .int .int-cardstyle .int-desc a .document-attachment {
+          display: inline-block;
+          font-size: 14px;
+          color: #5694f1;
+          margin: 12px 0 0; }
+        .int .int-cardstyle .int-desc a .multi-document {
+          display: flex;
+          flex-direction: row; }
+    .int .int-cardstyle .divide-line {
+      color: #eef1f3;
+      margin-right: 8px; }
+    .int .int-cardstyle .int-title {
+      color: #46515C;
+      margin: 4px 0 8px 0;
+      font-size: 17px;
+      font-weight: 500; }
+      @media screen and (max-width: 600px) {
+        .int .int-cardstyle .int-title {
+          font-size: 16px; } }
+    .int .int-cardstyle p {
+      margin: 4px 20px 0 0;
+      font-size: 14px;
+      color: #6c6c6c;
+      letter-spacing: 0.03rem;
+      line-height: 24px; }
 
 .notice {
   text-align: center;
