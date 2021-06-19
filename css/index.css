@@ -859,7 +859,8 @@ table td:nth-child(1) {
     position: relative; }
   .pflo .section-title {
     display: block;
-    margin: 0 0 12px 0; }
+    margin: 0 0 12px 0;
+    position: relative; }
   .pflo .part-title {
     font-size: 28px;
     font-weight: 600;
@@ -868,7 +869,15 @@ table td:nth-child(1) {
   .pflo .part-desc {
     font-size: 14px;
     color: #aaadb1;
-    padding-left: 16px; }
+    padding-left: 24px; }
+    .pflo .part-desc::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 48px;
+      width: 4px;
+      height: 18px;
+      background: #eef1f3; }
   .pflo .ui-design {
     display: grid;
     box-sizing: border-box;
@@ -979,7 +988,7 @@ table td:nth-child(1) {
       color: #eef1f3;
       margin-right: 8px; }
     .int .int-cardstyle .int-title {
-      color: #46515C;
+      color: #1f2020;
       margin: 4px 0 8px 0;
       font-size: 17px;
       font-weight: 500; }
